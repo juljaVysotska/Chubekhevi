@@ -183,11 +183,75 @@
 		</div>
 
 		<div class="blog block">
-			<div class="text"></div>
-			<div class="blog-list">
-				
+			<div class="side with-text">
+				<div class="text-wrapp">
+					<h2>Our blog's recent entries</h2>
+					<p>An interactive and guided experience where guests will taste and learn to identify (and appreciate!) the unique flavor profiles that give different teas their distinction</p>
+					<div class="controls fadeInUp wow">
+						<a href="#" class="more outline">Learn more</a>
+					</div>
+				</div>
 			</div>
+			<div class="side blog-list">
+				<div class="blog-article">
+					<a href="#">
+						<div class="img-cover">
+							<img src="img/views/blog.jpg" alt="">
+						</div>
+
+						<h3>Best Things To Do In Batumi, Georgia</h3>
+					</a>
+					<p class="date">March 12 2020</p>
+				</div>
+				<div class="blog-article">
+					<a href="#">
+						<div class="img-cover">
+							<img src="img/views/blog2.jpg" alt="">
+						</div>
+
+						<h3>Best Things To Do In Batumi, Georgia</h3>
+					</a>
+					<p class="date">March 12 2020</p>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
 		</div>
+
+		<footer>
+			<div class="links">
+				<div class="social-media facebook">
+					<a href="#">
+						<div class="img-wrapp">
+							<img src="img/icon/Facebook-color.svg" alt="">
+
+						</div>
+						<p>Follow our project on facebook</p>
+						<p>/WelcometoChubekhevi</p>
+					</a>
+				</div>
+				<div class="social-media facebook">
+					<a href="#">
+						<div class="img-wrapp">
+
+							<img src="img/icon/youtube-color.svg" alt="">
+							
+						</div>
+						<p>Watch our videos on YouTube</p>
+						<!-- <p>/WelcometoChubekhevi</p> -->
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright © 2019  All rights reserved.</p>
+				<a class="hashtag" href="#">#spend4seasonsingeorgia</a>
+
+				<a href="#" class="creators">
+					<img src="img/page.png" alt="">
+					<p>Developed by<br>PAGE Media Solutions</p>
+				</a>
+			</div>
+		</footer>
 	</main>
 
 
@@ -203,23 +267,23 @@
 			$(window).scrollTop($('.greeting').offset().top);
 		});
 
-		$(document).scroll(function () {
-			if($(window).scrollTop() >=$('.greeting').offset().top){
-				$('nav').removeClass('transparent').addClass('white');
-				$('nav').css({
-					'position':'fixed',
-					// 'width':'100%',
-					'top': 0
-				});
-			}else{
-				$('nav').addClass('transparent').removeClass('white');
-				$('nav').css({
-					'position':'',
-					// 'width':'100%',
-					'top': 0
-				});
-			}
-		});
+		// $(document).scroll(function () {
+		// 	if($(window).scrollTop() >=$('.greeting').offset().top){
+		// 		$('nav').removeClass('transparent').addClass('white');
+		// 		$('nav').css({
+		// 			'position':'fixed',
+		// 			// 'width':'100%',
+		// 			'top': 0
+		// 		});
+		// 	}else{
+		// 		$('nav').addClass('transparent').removeClass('white');
+		// 		$('nav').css({
+		// 			'position':'',
+		// 			// 'width':'100%',
+		// 			'top': 0
+		// 		});
+		// 	}
+		// });
 
 		$('.rotator').slick({
 		  infinite: true,
