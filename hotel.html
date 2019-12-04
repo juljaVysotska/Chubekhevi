@@ -6,10 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+
+	<link rel="stylesheet" href="css/hotel.css">	
 </head>
 <body>
 	<main>
-		<nav class="transparent">
+		<nav class="white">
 			<ul class="nav-list">
 				<li class="logo"><a href="#"><img src="img/icon/Chubekhevi_logo.svg" alt=""></a></li>
 				<li><a href="#">Chubekhevi</a></li>
@@ -41,15 +44,161 @@
 			
 			<div class="headline">
 				
-					<h1>Discover Chubekhevi</h1>
-					<p>An interactive and guided experience where guests will taste and learn to identify (and appreciate!) the unique flavor profiles that give different teas their distinction</p>
+				<h1>Hotel Tita</h1>
+				<div class="location">
+					<p class="location_country">
+						<img src="img/icon/marker.svg" alt="">
+						<span>Tita village, Chuberi</span>
+					</p>
+					<p class="location_valley">Nenskra valley</p>
 				</div>
+			</div>
 
 			<div class="anhor">
 				<img src="img/icon/anhor.svg" alt="">
 				<p>Scroll down to discover</p>
 			</div>
 		</div>
+
+		<div class="info">
+			<div class="short-info">
+				<div class="block price">
+					<div class="icon">
+						<img src="img/icon/price.svg" alt="">
+					</div>
+					<div class="text">
+						<p class="title">Price</p>
+
+						<div class="item">
+							<p class="value">65 GEL</p>
+							<p class="description">room price per day;</p>
+						</div>
+						<div class="item">
+							<p class="value">95 GEL</p>
+							<p class="description">room price including meals (breakfast, lunch and dinner)</p>
+						</div>
+					</div>
+				</div>
+				<hr class="separator">
+				<div class="block contact">
+					<div class="icon">
+						<img src="img/icon/phone.svg" alt="">
+					</div>
+					<div class="text">
+						<p class="title">Contact</p>
+
+						<div class="item">
+							<p class="value">Gia Vibliani</p>
+						</div>
+						<div class="item tel">
+							<a href="#">+995 599 753 564</a>
+							<a href="#">+995 551 407 427</a>
+
+							<div class="links">
+								<a href="#">facebook <img src="img/icon/link.svg" alt=""></a>
+								<a href="#">booking <img src="img/icon/link.svg" alt=""></a>
+								<a href="#">area <img src="img/icon/link.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="full-info">
+				<div class="image-description">
+					<div class="item">
+						<img src="img/icon/capacity.svg" alt="">
+						<div class="text">
+							<p class="title">Capacity</p>
+
+							<div class="value">
+								<p class="number">4</p>
+								<p>rooms</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/icon/human-capacity.svg" alt="">
+						<div class="text">
+							<p class="title">Capacity</p>
+
+							<div class="value">
+								<p class="number">8</p>
+								<p>guests</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="separator">
+				<p class="text-description">
+					There are 4 beautiful, cozy wooden cottages on the hotel area. Each cottage has a separate bathroom and can accommodate 2 persons. You can enjoy great views over mountains and delicious local food. In the yard of the hotel there is the fish farm where the guests can fish for trout from which the host will prepare delicious dish for them.
+				</p>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+
+		<div class="rotator">
+			<div class="photo">
+				<img src="img/hotel/image1.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="img/hotel/image2.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="img/hotel/image3.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="img/hotel/image1.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="img/hotel/image2.jpg" alt="">
+			</div>
+			<div class="photo">
+				<img src="img/hotel/image3.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="return">
+			<p>There are dozens more offers waiting on you</p>
+			<a href="#" class="outline">Back to list</a>
+		</div>
+
+		<footer>
+			<img class="background" src="img/footer.jpg" alt="">
+			<div class="links">
+				<div class="social-media facebook">
+					<a href="#">
+						<div class="img-wrapp">
+							<img src="img/icon/Facebook-color.svg" alt="">
+
+						</div>
+						<p>Follow our project on facebook</p>
+						<p>/WelcometoChubekhevi</p>
+					</a>
+				</div>
+				<div class="social-media facebook">
+					<a href="#">
+						<div class="img-wrapp">
+
+							<img src="img/icon/youtube-color.svg" alt="">
+							
+						</div>
+						<p>Watch our videos on YouTube</p>
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright © 2019  All rights reserved.</p>
+				<a class="hashtag" href="#">#spend4seasonsingeorgia</a>
+
+				<a href="#" class="creators">
+					<img src="img/page.png" alt="">
+					<p>Developed by<br>PAGE Media Solutions</p>
+				</a>
+			</div>
+		</footer>
 	</main>
 
 
@@ -60,5 +209,20 @@
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
 	  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+	  <script>
+		$('.anhor').click(function () {
+			$(window).scrollTop($('.info').offset().top -120 -  75);
+		});
+
+	  	$('.rotator').slick({
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  autoplay: true
+		});
+		
+	  </script>
 </body>
-</html>120px
+</html>

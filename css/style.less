@@ -208,6 +208,17 @@ nav {
 
 
 footer{
+	position: relative;
+	
+	.background{
+		position: absolute;
+		bottom: 153px;
+		width: 100%;
+		height: auto;
+		z-index: -1;
+		object-fit: cover
+	}
+	
 	.footer-bottom{
 		height: 153px;
 		background: #263739;
@@ -243,14 +254,8 @@ footer{
 
 	.links{
 		height: 1000px;
-		background: transparent url(../img/footer.jpg) bottom center no-repeat;
-		background-size: contain;
 		display: flex;
 		justify-content: center;
-
-
-
-
 	}
 
 	.social-media{
@@ -299,8 +304,59 @@ footer{
 
 
 
+.clearfix{
+	width: 100%;
+	display: flex;
+}
 
 
+.full{
+	border-radius: 40px;
+	background: #FE6A49;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	.font-regular-Oxygen();
+	font-size: 18.8804px;
+	transition: .3s all ease-in-out;
+	line-height: 41px;
+	border: 2px solid transparent;
 
+	&:hover{
+		background: white;
+		transition: .3s all ease-in-out;
+		border: 2px solid #FE6A49;
+		color: #FE6A49;
+		
+		svg path{
+			stroke: #FE6A49;
+		}
+		
+	}
+}
 
+.outline{	
+	width: 170px;
+	height: 48px;
 
+	border: 2px solid #FE6A49;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	.font-regular-Oxygen();
+	font-size: 18.8804px;
+	color: #FE6A49;
+	transition: .3s all ease-in-out;
+	line-height: 41px;
+
+	&:hover{
+		transition: .3s all ease-in-out;
+		background: #FE6A49;
+		color: white;
+
+	}
+}
