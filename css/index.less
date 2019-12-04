@@ -3,18 +3,41 @@
 .first-view{
 	height: 100vh;
 	margin-top: -120px;
-	background: linear-gradient(0deg, rgba(50, 55, 56, 0.25), rgba(50, 55, 56, 0.25)), 
-	url(../img/index-video.jpg) top center no-repeat, url(../img/index-video.jpg) top center no-repeat;
-	background-blend-mode: luminosity, normal, normal;
+	// background: url(../img/index-video.jpg) top center no-repeat;
 	background-size: cover;
-	padding: 0 160px;
+	padding: 0 8.3%;
 	position: relative;
 
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 
+	&:before {
+        content: '';
+        display: block;
+        background: -webkit-linear-gradient(bottom, rgba(28, 68, 73, 0.25), rgba(28, 68, 73, 0.25)),
+            -webkit-linear-gradient(bottom, rgba(0, 46, 56, 0.25), rgba(0, 46, 56, 0.25));
+        background: -o-linear-gradient(bottom, rgba(28, 68, 73, 0.25), rgba(28, 68, 73, 0.25)),
+            -o-linear-gradient(bottom, rgba(0, 46, 56, 0.25), rgba(0, 46, 56, 0.25));
+        background: linear-gradient(to top, rgba(28, 68, 73, 0.25), rgba(28, 68, 73, 0.25)),
+            linear-gradient(to top, rgba(0, 46, 56, 0.25), rgba(0, 46, 56, 0.25));
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+	
+	video{
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 100%;
+		z-index: -1
+	}
 
 	.headline{
+		position: relative;
 		.logo.big{
 			width: 166px;
 			height: 200px;
@@ -278,7 +301,7 @@
 		.vertical{
 			width: calc(100% - 16.6% * 2);
 			margin-left: 16.6%;
-			height: calc((100vw ) *1.5);
+			//height: calc((100vw ) *1.5);
 			
 		}
 	}
