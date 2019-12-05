@@ -458,12 +458,14 @@
 	}
 
 	.blog-list{
-		width: 60%;
+		width: calc(60% - 8.3%);
+		margin-right: 8.3%
 	}
 
 	.blog-article{
 		min-height:512px;
-		max-width: 500px;
+		width: 100%;
+		max-width: calc(100% /2 - 2%);
 		border-bottom: 1px solid #E0E0E0; 
 		position: relative;
 		margin-right: 2%;
@@ -474,16 +476,26 @@
 		}
 
 		.img-cover{
-			height: 50%;
+	        padding-top: 60%;
+	        position: relative;
 			width: 100%;
 			overflow: hidden;
 			margin-bottom: 27px;
 
 			img{
+	        	position:absolute;
+	        	top:0;
 				height: 100%;
 				width: 100%;
+	                transition: 0.3s all ease-in-out;
 				object-fit: cover;
-			}
+			} 
+			&:hover {
+	            img {
+	                transform: scale(1.02);
+	                transition: 0.3s all ease-in-out;
+	            }
+	        }
 		}
 
 		h3{
@@ -491,6 +503,14 @@
 			line-height: 40px;
 			.font-regular-Oxygen();
 			color: #333333;
+		}
+
+		a:hover{
+			h3{
+				transition: .3s all ease-in-out;
+				color: lighten(#333333, 35%);
+			}
+			
 		}
 
 		.date{
