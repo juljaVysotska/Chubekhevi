@@ -415,6 +415,8 @@ footer .social-media p:first-of-type {
   font-weight: 300;
   margin-left: 16.6%;
   margin-bottom: 90px;
+  display: inline-flex;
+  flex-direction: column-reverse;
 }
 .rotator-block .rotator {
   margin-left: 16.6%;
@@ -479,9 +481,12 @@ footer .social-media p:first-of-type {
   font-weight: 300;
   font-size: 48px;
   line-height: 56px;
+  height: 56px;
   margin-bottom: 0;
   color: white;
   margin: 0;
+  display: inline-flex;
+  flex-direction: column-reverse;
 }
 .rotator-block .item .text-wrapp p {
   font-family: 'Oxygen';

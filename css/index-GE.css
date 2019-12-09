@@ -120,9 +120,9 @@
   line-height: 32px;
 }
 .block .with-text .text-wrapp h2 {
+  font-size: 45px;
   font-family: 'BPG_Nino';
   font-weight: 500;
-  font-size: 45px;
   line-height: 56px;
 }
 .block .with-text .text-wrapp p {
@@ -130,4 +130,16 @@
   font-weight: 300;
   font-size: 22px;
   line-height: 32px;
+}
+.blog .blog-article h3 {
+  font-family: 'BPG_Nino';
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 40px;
+}
+.blog .blog-article .date {
+  font-family: 'BPG_Nino';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
 }

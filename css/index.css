@@ -115,6 +115,9 @@
   line-height: 88px;
   margin-bottom: 25px;
   color: white;
+  display: inline-flex;
+  height: 88px;
+  flex-direction: column-reverse;
 }
 .first-view .headline .text-wrapp p {
   color: white;
@@ -198,6 +201,9 @@
   font-size: 32px;
   line-height: 56px;
   color: #333;
+  height: 56px;
+  display: inline-flex;
+  flex-direction: column-reverse;
 }
 .greeting .text-wrapp p {
   font-family: 'Oxygen';
@@ -352,6 +358,10 @@
   font-family: 'Oxygen';
   font-weight: 400;
   color: #333333;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blog .blog-article a:hover h3 {
   transition: 0.3s all ease-in-out;

@@ -54,6 +54,9 @@
                 line-height: 88px;
                 margin-bottom: 25px;
                 color: white;
+                display: inline-flex;
+                height: 88px;
+                flex-direction: column-reverse;
             }
 
             p {
@@ -127,6 +130,7 @@
         margin: 0 auto;
         text-align: center;
         margin-bottom: 155px;
+        
     }
 
     .block-with-image {
@@ -156,6 +160,10 @@
             font-size: 32px;
             line-height: 56px;
             color: #333;
+            height: 56px;
+
+            display: inline-flex;
+            flex-direction: column-reverse;
         }
 
         p {
@@ -402,7 +410,11 @@
             font-size: 24px;
             line-height: 40px;
             .font-regular-Oxygen();
-            color: #333333;
+            color: #333333;    
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         a:hover {
