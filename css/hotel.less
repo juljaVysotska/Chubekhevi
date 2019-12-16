@@ -340,7 +340,7 @@ nav.transparent .nav-list .logo img {
 
 
 /***************************/
-@media(max-width: 1200px) {
+@media screen and (min-width: 760px) and (max-width: 1200px) {
 
     .decoration{
         display: none
@@ -367,51 +367,87 @@ nav.transparent .nav-list .logo img {
 }
 @media (max-width: 760px) {
     .info {
-        max-width: calc(100% - 40px);
+       // max-width: calc(100% - 40px);
         margin: 0 auto;
+        max-width: unset;
 
         .short-info {
             width: 100%;
             margin-left: 0;
             margin-right: 0;
             float: unset;
-            padding: 20px 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            border: none;
+            border-top: 1px solid #ececec;
+            border-bottom: 1px solid #ececec;
+
         }
 
         .full-info {
             width: 100%;
-            margin-top: 60px;
+            margin-top: 55px;
+            padding-left: 20px;
+            padding-right: 20px;
+
             
-            .image-description{
-                .item{
-                    float: unset;
-                    width: 100%;
-                    margin-bottom: 20px;
-                }
+            .image-description,.separator{
+                display: none;
             } 
 
-
-            .separator{
-                width: 100%;
-                margin-top: 20px;
-                margin-bottom: 30px
+            .text-description{
+                font-size: 16px;
+                line-height: 32px;
             }
+
+
 
         }
 
-        .block {
-            display: block;
-
-            .icon {
-                margin-right: 12px;
+        .block{
+            .icon{
                 padding-top: 0;
-                float: left;
-
+                margin-right: 10px;
                 img{
-                    height: 25px;
+                    height: 30px;
+                }
+            }
+
+            .text{
+                .title{  
+                    margin-top: 3px;                  
+                    font-size: 12px;
+                    line-height: 28px;
+                    margin-bottom: 0
+                }
+
+                .item{
+                    display: block;
+
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+
+                    .value{
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #000000;
+                        width: 100%;
+                    }
+
+                    .description{
+                        width: 100%;
+                        padding-top: 0;
+                        font-size: 14px;
+                        line-height: 24px;
+                        .font-light-Oxygen();
+                    }
                 }
             }
         }
+
+       
 
 
             
@@ -429,5 +465,84 @@ nav.transparent .nav-list .logo img {
 
     .photo{
         height: 400px;
+        width: 320px;
     }
+
+    .first-view{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 180px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+        .headline, .anhor{
+            display: none;
+        }
+    }
+
+
+}
+
+
+.mobile-info{
+    display: none;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+
+    h2{
+        font-size: 42px;
+        line-height: 48px;
+        .font-regular-Oxygen();
+        color: #333;
+        margin-bottom: 18px;
+    }
+
+  
+    .location {
+        display: flex;
+        margin-bottom: 15px;
+
+        .location_country,
+        .location_valley {
+            display: flex;
+            align-items: center;
+            .font-regular-Oxygen();
+            
+            font-size: 20px;
+            line-height: 36px;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .location_valley {
+            padding-left: 10px;
+            border-left: 1px solid black
+        }
+    }
+
+    .capacity{
+        .item{
+            margin-right: 30px;
+            float: left;
+            p{
+                .font-light-Oxygen();
+                font-size: 14px;
+                line-height: 28px;
+                color: #333;
+                display: flex;
+
+                span{
+
+                    font-size: 16px;
+                    line-height: 28px;
+                    .font-regular-Oxygen();
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
 }

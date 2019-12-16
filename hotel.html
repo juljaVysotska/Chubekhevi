@@ -38,6 +38,12 @@
 				<a href="#">GE</a>
 				<a href="#" class="actual">EN</a>
 			</div>
+
+			<div class="burger-menu">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		</nav>
 
 		<div class="first-view">
@@ -61,6 +67,26 @@
 		</div>
 
 		<div class="info">
+
+			<div class="mobile-info">
+				<div class="name">
+					<h2>Hotel Tita</h2>
+					<div class="location">
+						<p class="location_country">
+							<span>Tita village</span>
+						</p>
+						<p class="location_valley">Nenskra valley</p>
+					</div>
+				</div>
+
+				<div class="capacity">
+					<div class="item"><p><span>4</span>rooms</p></div>
+					<div class="item"><p><span>8</span>guests</p></div>
+				</div>
+
+				<div class="clearfix"></div>
+				
+			</div>
 			<div class="short-info">
 				<div class="block price">
 					<div class="icon">
@@ -229,8 +255,31 @@
 		  slidesToShow: 3,
 		  slidesToScroll: 1,
 		  arrows: false,
-		  autoplay: true
+		  autoplay: true,
+		   responsive: [
+			    {
+			      breakpoint: 1200,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			        infinite: true,
+				  variableWidth: true
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        infinite: true,
+					  variableWidth: true
+			      }
+			    },
+			   
+			  ]
 		});
+
+		
 		
 	  </script>
 </body>
