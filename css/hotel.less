@@ -108,8 +108,8 @@ nav.transparent .nav-list .logo img {
     .short-info {
         box-sizing: border-box;
         margin-left: 16.6%;
-        margin-right: 8.3%;
-        width: 25%;
+        margin-right: 5%;
+        width: 30%;
         border: 1px solid #E0E0E0;
         padding-top: 32px;
         padding-left: calc(100% - (100% - 63px));
@@ -202,10 +202,10 @@ nav.transparent .nav-list .logo img {
                     margin-right: 35px;
                     white-space: nowrap;
 
-                    span{
+                    span {
                         border-bottom: 1px solid #CCE4F9;
                         padding-bottom: 2px;
-    
+
                     }
 
                     &:last-child {
@@ -333,5 +333,101 @@ nav.transparent .nav-list .logo img {
 
     .outline {
         margin: 0 auto;
+    }
+}
+
+
+
+
+/***************************/
+@media(max-width: 1200px) {
+
+    .decoration{
+        display: none
+    }
+    .info {
+        max-width: calc(100% - 80px);
+        margin: 0 auto;
+
+        .short-info {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            float: unset;
+        }
+
+        .full-info {
+            width: 100%;
+            margin-top: 60px;
+
+
+        }
+    }
+
+}
+@media (max-width: 760px) {
+    .info {
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+
+        .short-info {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            float: unset;
+            padding: 20px 30px;
+        }
+
+        .full-info {
+            width: 100%;
+            margin-top: 60px;
+            
+            .image-description{
+                .item{
+                    float: unset;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            } 
+
+
+            .separator{
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 30px
+            }
+
+        }
+
+        .block {
+            display: block;
+
+            .icon {
+                margin-right: 12px;
+                padding-top: 0;
+                float: left;
+
+                img{
+                    height: 25px;
+                }
+            }
+        }
+
+
+            
+    }
+
+    .return {
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+        
+        p{                        
+            font-size: 20px;
+            line-height: 36px;
+        }
+    }
+
+    .photo{
+        height: 400px;
     }
 }
