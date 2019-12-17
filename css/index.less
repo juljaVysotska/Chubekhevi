@@ -436,3 +436,151 @@
         }
     }
 }
+
+
+/*-*/
+
+@media screen and (min-width: 760px) and (max-width: 1200px){
+
+    .decoration{
+        display: none;
+    }
+    .rotator-block{
+        padding-bottom: 180px;
+
+        h2{
+            margin-left: 40px;
+        }
+
+        .rotator{
+            margin-left: 40px;
+        }
+
+        
+
+        .slick-prev{
+            left: 40px;
+            top: 45px;
+            z-index: 9999;
+
+            &:after{
+                content: url(../img/icon/arr-left-white.svg)
+            }
+        }
+
+        .slick-next{
+            left: 100px;
+            z-index: 9999;
+            top: 45px;
+            &:after{
+                content: url(../img/icon/arr-right-white.svg)
+            }
+        }
+    }
+
+    .first-view{
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .headline{
+            .logo.big{
+                float: unset;
+                margin-bottom: 60px;
+            }
+
+            .text-wrapp{
+                p{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .anhor{
+            display: none;
+        }
+    }
+
+    .greeting{
+        padding-top: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 75px;
+        padding-bottom: 120px;
+
+        .title{
+            text-align: left
+        }
+        .block-with-image{
+            display: block;
+
+            img{
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 63px;
+            }
+        }
+
+        .text-wrapp{
+            h2,p{
+                max-width: 80%;
+            }
+        }
+    }
+
+    .image-separator .coordinates{
+        right: 40px;
+    }
+
+
+
+    .block{
+        .vertical {
+            display: none;
+        }
+
+        .side{
+            width: 100%;
+            float: unset;
+
+
+
+        }
+
+
+
+        &.image-text{
+            .with-text{
+                .text-wrapp{
+                    margin-top: 80px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .with-text .text-wrapp{
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-left: 0;
+            margin-bottom: 75px;
+
+            h2, p{
+               max-width: unset;
+            }
+        }
+    }
+
+    .blog{
+        .blog-list{
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .blog-article{
+            max-width: calc(100% / 2 - 20px);
+            margin-right: 40px;
+            &:last-child{
+                margin-right: 0
+            }
+        }
+    }
+}
