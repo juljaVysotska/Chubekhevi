@@ -13,6 +13,7 @@ nav.transparent .nav-list .logo img{
 .head-picture{
     height: 435px;
 }
+
 .block {
     margin-bottom: 150px;
 
@@ -96,7 +97,7 @@ nav.transparent .nav-list .logo img{
     h2{
         .font-light-Oxygen();
         font-size: 32px;
-        line-height: 96px;
+        line-height:66px;
         color: #333;
     }
 
@@ -152,6 +153,10 @@ nav.transparent .nav-list .logo img{
             }
         }
     }
+}
+
+.filter-collapse{
+    display: none;
 }
 
 .hotel-list{
@@ -241,18 +246,19 @@ nav.transparent .nav-list .logo img{
                     
 
                     p{                            
-                        font-size: 14px;
-                        line-height: 30px;
-                        color: #828282;
-                        .font-light-Oxygen();
+                        
                         margin-bottom: 0;
+                        font-size: 14px;
+                        line-height: 28px;
+                        .font-regular-Oxygen();
+                        color: #828282;
 
                         span{                                
                             font-size: 14px;
-                            line-height: 28px;
-                            .font-regular-Oxygen();
+                            line-height: 30px;
                             color: #828282;
-                            margin-right: 5px;
+                            .font-light-Oxygen();
+                            margin-left: 5px;
                         }
                     }
                     svg{
@@ -307,9 +313,11 @@ nav.transparent .nav-list .logo img{
     
     .img-wrapp{
         width: 100%;
-        height: 630px;
+            // height: 630px;
         position: relative;
         overflow: hidden;
+
+        padding-top: 50%;
 
         img{
         
@@ -337,4 +345,329 @@ nav.transparent .nav-list .logo img{
             left: 35%;
         }
     }
+}
+
+
+
+/*-*/
+
+@media screen and (min-width: 760px) and (max-width: 1200px){
+
+    .decoration{
+        display: none;
+    }
+    .section-title{
+        display: block;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-bottom: 85px;
+
+        h1,p{
+            width: 100%;
+        }
+
+        h1{
+            margin-bottom: 34px;
+            padding-right: 0
+        }
+    }
+
+    .hotel-search{
+        margin-left: 40px;
+        margin-right: 40px;
+        
+        h2{
+            margin-bottom: 45px;
+        }
+
+        form{
+            display: block;
+
+        }
+
+        .capacity, .room{
+            width: calc(100% / 2 - 20px);
+            margin-right: 40px;
+            float: left;
+            margin-bottom: 35px;
+
+
+        }
+
+        .capacity{
+            margin-right: 0
+        }
+
+        .location{
+            width: calc(100% - 240px - 40px);
+            margin-right: 40px;
+        }
+
+        button{
+            float: right;
+            margin-top: 12px;
+            height: 48px;
+            margin-left: auto
+        }
+    }
+
+    .hotel-list{
+        margin-top: 50px;
+
+        .card{
+            width: calc(100% /2 - 20px);
+            margin-right: 40px;
+
+            &:nth-child(3n){
+                margin-right: 40px
+            }
+
+            &:nth-child(2n), &:last-child{
+                margin-right: 0
+            }
+
+            .more{
+                .info{
+                    .item{
+                        margin-right: 30px;
+
+                        svg{
+                            margin-right: 5px;
+                        }
+
+                        span{
+                            display: none;
+                        }
+
+                    }
+                }
+
+            }
+
+            
+        }
+    }
+
+    .block{
+        .vertical {
+            display: none;
+        }
+
+        .side{
+            width: 100%;
+            float: unset;
+
+            .text-wrapp{
+                order: 2;
+            }
+            img{
+                order: 1;
+            }
+        }
+
+        &.image-text{
+            .with-text{
+                .text-wrapp{
+                    margin-top: 80px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .with-text .text-wrapp{
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-left: 0;
+            margin-bottom: 100px;
+
+            h2, p{
+               max-width: unset;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+     .decoration{
+        display: none;
+    }
+
+
+    .section-title{
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 47px;
+        margin-bottom: 100px;
+
+        h1,p{
+            width: 100%;
+        }
+
+        h1{
+            margin-bottom: 34px;
+            padding-right: 0;
+
+                        
+            font-size: 42px;
+            line-height: 48px;
+        }
+
+        p{ 
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+
+    .hotel-search{
+        margin-right: 20px;
+        margin-left: 20px;
+
+        h2{
+
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+
+        .filter-collapse{
+            display: inline-block;
+            cursor: pointer;
+            color: #FE6A49;
+            font-size: 16px;
+            line-height: 26px;
+            .font-regular-Oxygen();
+            // padding-bottom: 2px;
+            border-bottom: 1px dashed #FE6A49;
+            margin-bottom: 40px;
+        }
+
+        form{
+            display: block;
+
+            &.collapsed{
+                height: 0;
+                overflow: hidden;
+                transition: .3s all ease-in-out;
+            }
+        }
+
+        .input-wrapp{
+            width: 100%;
+            float: unset;
+            margin-bottom: 28px;
+        }
+
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            width: 229px;
+            height: 47px;
+        }
+    }
+
+    .hotel-list{
+        .card{
+            width: 100%;
+            float: unset;
+            margin-right: 0;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+
+            .more{
+                display: block;
+
+                .info{
+                    width: 100%;
+                    .item{
+                        margin-right: 15px;
+
+                        &:last-child{
+                            float: unset;
+                        }
+                        svg{
+                            display: none;
+                        }
+                    }
+                }
+
+                .cost{
+                    .price{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+     .block {
+        margin-bottom: 100px;
+
+        .horisontal {
+            display: none;
+        }
+
+        .side{
+            width: 100%;
+            float: unset;
+
+           
+
+            .vertical{
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 0
+                
+            }
+        }
+
+        
+
+        .with-text .text-wrapp{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 0;
+            // margin-top: 35px;
+            margin-bottom: 50px;
+
+            h2{
+                font-size: 20px;
+                line-height: 36px;
+                margin-bottom: 32px;
+            }
+
+            p{
+
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 50px;
+            }
+        }
+
+        &.image-text .with-text .text-wrapp{
+            margin-top: 35px;
+            margin-bottom: 60px;
+            margin-top: 0
+        }
+    }
+
+    .image-separator {
+        margin-bottom: 100px;
+
+        .img-wrapp img{
+            top: 0 !important;
+            left: 0 !important;
+        }
+    }
+       
+
+    .load-more{
+        margin-bottom: 90px;
+
+        a{
+            margin-top: 30px;
+        }
+    }
+
 }
