@@ -35,13 +35,14 @@ nav.white {
 
 .photo {
     height: 560px;
+    max-height: 560px;
     //width: 41% !important;
     overflow: hidden;
 
     img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
@@ -70,6 +71,7 @@ article {
         line-height: 96px;
         .font-regular-Oxygen();
         margin-bottom: 80px;
+        color: #333;
     }
 
     h2 {
@@ -77,17 +79,34 @@ article {
         .font-regular-Oxygen();
         line-height: 56px;
         margin-bottom: 55px;
+        color: #333;
     }
 
     figure {
         margin-bottom: 85px;
         margin-top: 65px;
 
+        padding-top: 56.5%;
+        overflow: hidden;
+        position: relative;
+        img{
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         figcaption {
             .font-light-Oxygen();
             font-size: 14px;
             line-height: 32px;
             margin-top: 5px;
+            background: white;
+            width: 100%;
+            height: 32px;
+            position: relative;
+            z-index: 999
         }
     }
 
@@ -107,10 +126,10 @@ article {
 
     .blog-article {
         height: 380px;
-        max-width: calc(100%/3 - 40px);
+        max-width: calc(100%/3 - 27px);
         border-bottom: 1px solid #E0E0E0;
         position: relative;
-        margin-right: 2%;
+        margin-right: 40px;
         float: left;
 
         &:last-child {
@@ -166,5 +185,139 @@ article {
             bottom: 0;
             color: #828282;
         }
+    }
+}
+
+/*-*/
+
+@media screen and (min-width: 760px) and (max-width: 1200px){
+    .date{
+         margin-right: 40px;
+        margin-left: 40px;
+    }
+    article {
+        .text-container {
+            width: calc(100% - 80px);
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            
+            // font-size: 20px;
+            // line-height: 36px;
+            margin-bottom: 32px;
+        }
+
+
+        p {            
+            // font-size: 16px;
+            // line-height: 32px;
+            margin-bottom: 26px;
+        }
+
+        figure{
+            margin-bottom: 60px
+        }
+
+    }
+
+    .blog {
+        padding-left: 40px; 
+        padding-right: 40px;
+
+        .blog-article{
+            max-width: calc(100% / 2 - 10px);
+            margin-right: 20px;
+            margin-bottom: 40px;
+
+            &:nth-child(2n){
+                margin-right: 0
+            }
+
+            &:nth-child(3n){
+                margin-right: 20px
+            }
+
+            .date{
+                margin-left: 0;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 760px){
+    .date{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+     article {
+        .text-container {
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            font-size: 42px;
+            line-height: 48px;
+        }
+
+        h2 {
+            
+            font-size: 20px;
+            line-height: 36px;
+            margin-bottom: 32px;
+        }
+
+
+        p {            
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 26px;
+        }
+
+        figure{
+            margin-bottom: 50px
+        }
+
+    }
+
+    .blog {
+        padding-left: 20px; 
+        padding-right: 20px;
+        margin-top: 100px;
+
+        .blog-article{
+            max-width: 100%;
+            margin-right: 0px;
+            margin-bottom: 40px;
+            float: unset;
+
+            &:nth-child(2n){
+                margin-right: 0
+            }
+
+            &:nth-child(3n){
+                margin-right: 0
+            }
+
+            .date{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .photo{
+        max-height: 450px;
     }
 }
