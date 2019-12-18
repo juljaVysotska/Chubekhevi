@@ -24,6 +24,74 @@ a {
     }
 }
 
+.burger-menu_modal{
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+    position: fixed;
+    transition: 0.7s all ease-in-out;
+    background: white;
+    z-index: 999999;
+
+    top: -2000px;
+
+
+    &.show{
+        top: 0;
+        left: 0;
+    }
+
+    .logo-burger{
+        text-align: center;
+        margin: 0 auto;        
+        width: 136px;
+        height: 160px;
+        display: block;
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    .close{
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+
+    ul{
+        li{
+            font-size: 18px;
+            line-height: 48px;
+            margin-bottom: 16px;
+            .font-regular-Oxygen();
+            transition: 0.3s all ease-in-out;
+            text-align: center;
+
+            a{
+                transition: 0.3s all ease-in-out;
+                color: black;
+
+                &:hover{
+                    color: #333;
+                    transition: 0.3s all ease-in-out;
+                }
+            }
+
+            &.actual{
+                a{
+                    color: #FE6A49;
+
+                    &:hover{
+                        transition: 0.3s all ease-in-out;
+                        color: darken(#FE6A49, 15%);
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 nav {
     display: flex;
@@ -39,6 +107,8 @@ nav {
     z-index: 111;
 
     &.transparent {
+        transition: 0.3s all ease-in-out;
+
         .nav-list {
             .logo {
                 img {
@@ -61,11 +131,14 @@ nav {
             }
         }
 
+
+
     }
 
     &.white {
         background: #FFFFFF;
         box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.07);
+
 
         .social-media_links {
 
@@ -222,6 +295,7 @@ nav {
     .burger-menu{
         margin-left: auto;
         display: none;
+        cursor: pointer;
         div{
             width: 24px;
             height: 2px;
@@ -581,6 +655,7 @@ footer {
     
 
     nav{
+        position: fixed;
         padding-left: 38px;
         padding-right: 40px;
         width: 100%;
@@ -588,6 +663,7 @@ footer {
 
         .burger-menu {
             display: block;
+            cursor: pointer;
         }
 
         .social-media_links, .lang-picker{
@@ -633,9 +709,10 @@ footer {
 
     
 }
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
 
     nav{
+        position: fixed;
         padding-left: 8px;
         padding-right: 20px;
         width: 100%;

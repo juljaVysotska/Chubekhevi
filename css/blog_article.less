@@ -125,13 +125,23 @@ article {
     margin-top: 250px;
 
     .blog-article {
-        height: 380px;
+        min-height: 380px;
         max-width: calc(100%/3 - 27px);
         border-bottom: 1px solid #E0E0E0;
         position: relative;
         margin-right: 40px;
         float: left;
 
+        a{
+            display: block;
+            margin-bottom: 100px;
+
+            &:hover{
+                .img-cover img{
+                    transform: scale3d(1.05,1.05,1.05);
+                }
+            }
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -253,12 +263,17 @@ article {
 }
 
 @media screen and (max-width: 760px){
+    
     .date{
         margin-right: 20px;
         margin-left: 20px;
     }
 
      article {
+
+        &:first-of-type{
+            margin-top: 120px;
+        }
         .text-container {
             width: calc(100% - 40px);
             margin: 0 auto;

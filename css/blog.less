@@ -48,7 +48,7 @@ nav.white {
 
 
 .blog-article {
-    min-height: 500px;
+    min-height: 360px;
     max-width: calc(100%/3 - 2%);
     margin-bottom: 80px;
     width: 100%;
@@ -57,7 +57,17 @@ nav.white {
     margin-right: 2%;
     float: left;
 
-    &:last-child,
+    a{
+        display: block;
+        margin-bottom: 100px;
+
+        &:hover{
+            .img-cover img{
+                transform: scale3d(1.05,1.05,1.05);
+            }
+        }
+    }
+
     &:nth-child(3n) {
         margin-right: 0;
     }
@@ -119,6 +129,8 @@ nav.white {
 
 }
 
+
+
 .load-more {
     margin-top: 40px;
 
@@ -132,6 +144,7 @@ nav.white {
 
 
 /*-*/
+
 
 @media screen and (min-width: 760px) and (max-width: 1200px){
     .blog{
@@ -225,3 +238,17 @@ nav.white {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

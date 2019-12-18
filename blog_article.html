@@ -15,9 +15,24 @@
 	<script>
 	  new WOW().init();
 	</script>
+
+
 	
 </head>
 <body>
+	<div class="burger-menu_modal">
+		<a href="#" class="logo-burger"><img src="img/icon/Chubekhevi_logo-cut.svg" alt=""></a>
+
+		<img src="img/icon/close.svg" alt="" class="close">
+
+
+		<ul>
+			<li><a href="#">Chubekhevi</a></li>
+			<li><a href="#">Guesthouses</a></li>
+			<li><a href="#">Additional services</a></li>
+			<li class="actual"><a href="#">Blog</a></li>
+		</ul>
+	</div>
 	<main>
 		<img class="decoration" src="img/icon/decoration-hor.svg" alt="">
 		<nav class="white">
@@ -60,10 +75,11 @@
 			<h1>Discover The Svaneti Region, Georgia’s Best Kept Secret</h1>
 
 			<figure>
-				  <img src="img/article/image1.jpg" alt="Trulli" >
-				  <figcaption></figcaption>
+			    <a data-fancybox="gallery" href="img/article/image1.jpg">
+			    	<img src="img/article/image1.jpg" alt="Trulli">
+			    </a>
+			    <figcaption></figcaption>
 			</figure>
-
 			<div class="text-container">
 				<p>Dozens of picturesque villages dotted in beautiful winding mountain roads, surrounded by the impressive Caucasus mountain snowed peaks. Sounds idyllic?</p>
 				<p>Add to the mix a visit to Georgia’s capital of adventure, Mestia, which will have many hiking paths and amazing skiing opportunities waiting for you. Still not convinced? You’ll also get the chance to experience a unique and untouched culture, where people are friendly, and the food is delicious. I bet I have your attention now.</p>
@@ -80,22 +96,19 @@
 		<div class="rotator fadeInUp wow">
 			<div class="rotator-wrapp">
 				<div class="photo">
-					<img src="img/article/image2.jpg" alt="">
+					<a data-fancybox="gallery" href="img/article/image2.jpg">
+						<img src="img/article/image2.jpg" alt="">
+					</a>
 				</div>
 				<div class="photo">
-					<img src="img/article/image3.jpg" alt="">
+					<a data-fancybox="gallery" href="img/article/image3.jpg">
+						<img src="img/article/image3.jpg" alt="">
+					</a>
 				</div>
 				<div class="photo">
-					<img src="img/article/image4.jpg" alt="">
-				</div>
-				<div class="photo">
-					<img src="img/article/image2.jpg" alt="">
-				</div>
-				<div class="photo">
-					<img src="img/article/image3.jpg" alt="">
-				</div>
-				<div class="photo">
-					<img src="img/article/image4.jpg" alt="">
+					<a data-fancybox="gallery" href="img/article/image4.jpg">
+						<img src="img/article/image4.jpg" alt="">
+					</a>
 				</div>
 			</div>
 			<img src="img/icon/decoration-hor.svg" alt="" class="decoration">
@@ -110,7 +123,11 @@
 				<p>From Ushguli, take the dirt road up the mountain. The whole path should showcase Shkhara glacier in the distance, at the foot of the mountain that shares the name. It’s 8 km, with 540 meters of elevation gain, to the glacier, walking at the bottom of the valley. The climbing route to Georgia’s highest summit starts from the foot of the glacier, so you’ll see people with tons of equipment walk alongside you –don’t be scared, you’re not underprepared, they have a different “walk” in mind.</p>
 
 				<figure>
-				  <img src="img/article/image5.jpg" alt="Trulli" style="width:100%">
+				  
+					<a data-fancybox="gallery" href="img/article/image5.jpg">
+						<img src="img/article/image5.jpg" alt="Trulli" style="width:100%">
+						
+					</a>
 				  <figcaption>Forrest road in Chuberi</figcaption>
 				</figure>
 
@@ -217,9 +234,33 @@
 			arrows: false,
 			autoplay: true,
 			variableWidth: true,
-		  
+		  responsive: [
+			    {
+			      breakpoint: 1200,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			        infinite: true,
+				  variableWidth: true
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        infinite: true,
+					  variableWidth: true
+			      }
+			    },
+			   
+			  ]
 		});
 		
 	  </script>
+	<script src="js/script.js"></script>
+	<link  rel="stylesheet" href="js/fancy-box/jquery.fancybox.min.css"/>
+	<script src="js/fancy-box/jquery.fancybox.js"></script>
+	  
 </body>
 </html>
