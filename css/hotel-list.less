@@ -99,6 +99,7 @@ nav.transparent .nav-list .logo img{
         font-size: 32px;
         line-height:66px;
         color: #333;
+        margin-bottom: 25px;
     }
 
     button{
@@ -132,6 +133,25 @@ nav.transparent .nav-list .logo img{
             color: #828282;
         }
 
+        .select-wrapp{
+            position: relative;
+
+            &:after{
+                content: url(../img/icon/arr-bottom.svg);
+
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                height: 46px;
+                width: 47px;
+                background: white;
+                position: absolute;
+                right: 0;
+                pointer-events: none;
+                top: 0;
+            }
+        }
+
         select{
             height: 47px;
             border-bottom: 1px solid #E0E0E0;
@@ -140,6 +160,8 @@ nav.transparent .nav-list .logo img{
             font-size: 18px;
             line-height: 41px;
             .font-regular-Oxygen();
+
+            
 
             option{
                 height: 50px !important;
@@ -207,7 +229,7 @@ nav.transparent .nav-list .logo img{
         }
 
         .valley{
-            border-left: 1px solid #828282;
+            border-left: 1px solid #c4c4c4;
             .font-light-Oxygen();
             font-size: 12px;
             line-height: 18px;
@@ -577,6 +599,7 @@ nav.transparent .nav-list .logo img{
 
             .more{
                 display: block;
+                margin-top: 15px;
 
                 .info{
                     width: 100%;
