@@ -103,7 +103,8 @@ nav {
     padding-right: 8.3%;
     // width: calc(100% - 2* 160px);
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 111;
 
     &.transparent {
@@ -250,6 +251,9 @@ nav {
 
                 img {
                     position: absolute;
+
+                    // width: 83px;
+                    // height: auto;
                 }
 
             }
@@ -462,8 +466,10 @@ footer {
     line-height: 41px;
     border: 2px solid transparent;
     padding-left: 44px;
-    max-width: 200px;
+    max-width: 280px;
     padding-right: 44px;
+    width: 229px;
+    height: 48px;
 
     &:hover {
         background: white;
@@ -475,6 +481,11 @@ footer {
             stroke: #FE6A49;
         }
 
+    }
+
+    &.big{
+        width: 194px;
+        height: 56px;
     }
 }
 
@@ -504,6 +515,11 @@ footer {
         background: #FE6A49;
         color: white;
 
+    }
+
+    &.big{
+        width: 194px;
+        height: 56px;
     }
 }
 

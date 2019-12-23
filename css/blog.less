@@ -8,6 +8,7 @@ main {
         position: absolute;
         top: -31px;
         right: -31px;
+        z-index: -1;
     }
 }
 
@@ -17,11 +18,15 @@ nav.white {
     background: transparent;
 }
 
+nav ul.nav-list li.logo img {
+    display: block !important
+}
+
 .blog {
     max-width: calc(100% - 8.3% * 2);
     margin-left: 8.3%;
     margin-right: 8.3%;
-
+    margin-top: 250px;
 
     .section-title {
         display: flex;
@@ -153,6 +158,9 @@ nav.white {
         max-width: unset;
         margin: 0 auto;
 
+        margin-left: 40px;
+        margin-right: 40px;
+
         .section-title{
             display: block;
             margin-right: 40px;
@@ -191,7 +199,10 @@ nav.white {
 
 @media screen and (max-width: 760px){
     .blog{
+        margin-top: 120px;
         max-width: unset;
+        margin-left: 20px;
+        margin-right: 20px;
 
         .section-title{
             display: block;

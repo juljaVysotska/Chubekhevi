@@ -261,6 +261,20 @@
 	<script src="js/script.js"></script>
 	<link  rel="stylesheet" href="js/fancy-box/jquery.fancybox.min.css"/>
 	<script src="js/fancy-box/jquery.fancybox.js"></script>
+
+	<script>
+		$(window).scroll(()=>{
+			$('nav').addClass('white');
+			$('nav').css('background-color','');
+			$('nav').removeClass('transparent');
+
+			if($(window).scrollTop()){
+				$('nav').addClass('white');
+				$('nav').css('background-color','white');
+				$('nav').removeClass('transparent');
+			}
+		});
+	</script>
 	  
 </body>
 </html>

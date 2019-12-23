@@ -36,7 +36,7 @@
 		<img class="decoration" src="img/icon/decoration-hor.svg" alt="">
 		<nav class="white">
 			<ul class="nav-list">
-				<li class="logo"><a href="#"><img src="img/icon/Chubekhevi_logo.svg" alt=""></a></li>
+				<li class="logo"><a href="#"><img src="img/icon/Chubekhevi_logo-cut-small.svg" alt=""></a></li>
 				<li><a href="#">Chubekhevi</a></li>
 				<li><a href="#">Guesthouses</a></li>
 				<li><a href="#">Additional services</a></li>
@@ -133,7 +133,7 @@
 		</div>
 
 		<div class="load-more">
-			<a href="#" class="outline">Load more</a>
+			<a href="#" class="outline big">Load more</a>
 		</div>
 
 		
@@ -184,6 +184,20 @@
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+
+	<script>
+		$(window).scroll(()=>{
+			$('nav').addClass('white');
+			$('nav').css('background-color','');
+			$('nav').removeClass('transparent');
+
+			if($(window).scrollTop()){
+				$('nav').addClass('white');
+				$('nav').css('background-color','white');
+				$('nav').removeClass('transparent');
+			}
+		});
+	</script>
 
 	  
 </body>

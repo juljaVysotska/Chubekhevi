@@ -104,12 +104,14 @@ nav.transparent .nav-list .logo img {
 .info {
     padding-bottom: 115px;
     // padding-right: 16.6%;
+    max-width: 1200px;
+    margin: 0 auto;
 
     .short-info {
         box-sizing: border-box;
-        margin-left: 16.6%;
+        // margin-left: 16.6%;
         margin-right: 5%;
-        width: 30%;
+        width: 41%;
         border: 1px solid #E0E0E0;
         padding-top: 32px;
         padding-left: calc(100% - (100% - 63px));
@@ -227,8 +229,8 @@ nav.transparent .nav-list .logo img {
     }
 
     .full-info {
-        width: 33.3%;
-        margin-right: 16.6%;
+        width: 50%;
+        // margin-right: 16.6%;
         margin-left: auto;
 
         .image-description {
@@ -428,6 +430,10 @@ nav.transparent .nav-list .logo img {
 
 }
 @media screen and (max-width: 760px) {
+
+    .first-view:before{
+        display: none
+    }
     .info {
        // max-width: calc(100% - 40px);
         margin: 0 auto;

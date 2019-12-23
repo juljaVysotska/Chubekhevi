@@ -13,10 +13,12 @@ $('.burger-menu_modal .close').click(()=>{
 
 $(window).scroll(()=>{
 	$('nav').removeClass('white');
+	$('nav').css('background-color','');
 	$('nav').addClass('transparent');
 
 	if($(window).scrollTop()){
 		$('nav').addClass('white');
+		$('nav').css('background-color','white');
 		$('nav').removeClass('transparent');
 	}
 });
