@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		div{
+			background: darkred;
+			height: 250px;
+			width: 250px;
+		}
+	</style>
+
+	<div >
+		
+	</div>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+
+	  <script>
+	  	let i =0;
+	  	$('div').on({
+			// scroll: function () {
+			// 	console.log('scroll');
+			// },
+			// mouseover : ()=>{
+			// 	console.log('mouseover');
+			// },
+
+			mousewheel: function (e) {
+				i=0;
+				let event = e.originalEvent.deltaY;
+
+		    	e.preventDefault();
+
+		    	if (event>0) {
+		    		// console.log("merry xmas+")
+			    } else {
+			    	// console.log("merry xmas-")
+			    }
+				i++;
+
+		    	console.log(i);
+			},
+		});
+
+		// owl.on('mousewheel', '.owl-stage', function (e) {
+		//     if (e.deltaY>0) {
+		//         owl.trigger('next.owl');
+		//     } else {
+		//         owl.trigger('prev.owl');
+		//     }
+		//     e.preventDefault();
+		// });
+	  </script>
+</body>
+</html>
+
+
+//think about it 

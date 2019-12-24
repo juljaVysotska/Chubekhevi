@@ -204,3 +204,119 @@ nav.transparent .nav-list .logo img {
         object-fit: cover;
     }
 }
+
+.map-picture{
+    margin-bottom: 175px;
+    position: sticky;
+    top: 0;
+    margin-top: 125px;
+    
+    .map-overlay{
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        padding: 25%;
+        width: 100%;
+        position: relative;
+
+        z-index: 999;
+        h2{
+            position: absolute;
+            top: 245px;
+            left: 0;
+            right: 0;
+            .font-light-Oxygen();
+            font-size: 48px;
+            line-height: 72px;
+            color: #333333;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .map{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: auto;
+        // opacity: 0;
+        
+        .back,.front{
+            width: 100%;
+            height: auto;
+        }
+
+        .front{
+            position: absolute;
+            top:0;
+            left:0 ;
+        }
+
+        &.shown{
+            opacity: 1;
+            transition: .3s all ease;
+        }
+    }
+
+    .text-block{
+        position: absolute;
+        top: 300px;
+        left: 8.3%;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+        padding: 67px 92px 61px 62px;
+        width: 629px;
+
+        p{
+            .font-light-Oxygen();
+            font-size: 19px;
+            line-height: 36px;
+            color: #333333;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1200px){
+
+    .decoration{
+        display: none;
+    }
+    .block{
+        .vertical {
+            display: none;
+        }
+
+        .side{
+            width: 100%;
+            float: unset;
+
+            .text-wrapp{
+                order: 2;
+            }
+            img{
+                order: 1;
+            }
+        }
+
+        &.image-text{
+            .with-text{
+                .text-wrapp{
+                    margin-top: 80px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .with-text .text-wrapp{
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-left: 0;
+            margin-bottom: 100px;
+
+            h2, p{
+               max-width: unset;
+            }
+        }
+    }
+}
