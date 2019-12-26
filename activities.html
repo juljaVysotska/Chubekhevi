@@ -370,9 +370,19 @@
 			  ]
 		});
 
+		$(document).ready(function () {
+	  		let i = 0;
+	  		$('.card').each((el)=>{
+		  		$($('.card')[i]).css('animation-delay', `${i/5}s`);
+		  		i++;
+		  	});
 
-		//$('.view').plaxify({"xRange":20,"yRange":20,"invert":true})
-		//$.plax.enable();
+		  	
+
+	  	});
+
+		$('.view').plaxify({"xRange":20,"yRange":20,"invert":true})
+		$.plax.enable();
 		
 	</script>
 

@@ -202,14 +202,16 @@ nav.transparent .nav-list .logo img {
         width: 110%;
         height: 110%;
         object-fit: cover;
+        transition: .0s all ease-in-out;
     }
 }
 
 .map-picture{
     margin-bottom: 175px;
-    position: sticky;
+   // position: sticky;
     top: 0;
     margin-top: 125px;
+    // pointer-events: none;
     
     .map-overlay{
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -232,14 +234,20 @@ nav.transparent .nav-list .logo img {
             text-align: center;
         }
     }
+    
+    .map-container:last-child{
+        pointer-events: none
+    }
 
     .map{
-        position: absolute;
+       // position: absolute;
         top: 0;
         left:0;
         width: 100%;
         height: auto;
         // opacity: 0;
+
+
         
         .back,.front{
             width: 100%;
@@ -282,6 +290,10 @@ nav.transparent .nav-list .logo img {
     .decoration{
         display: none;
     }
+    .image-separator{
+        display: none;
+
+    }
     .block{
         .vertical {
             display: none;
@@ -318,5 +330,107 @@ nav.transparent .nav-list .logo img {
                max-width: unset;
             }
         }
+    }
+}
+
+@media screen and (max-width: 760px){
+    .first-view {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 530px;
+        margin-top: 0;
+
+
+        .headline {
+            .logo.big {
+                display: none;
+            }
+
+            .text-wrapp {
+                width: 100%;
+
+                h1 {
+                    font-size: 42px;
+                    line-height: 48px;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    max-width: 100%;
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .anhor {
+            display: none;
+        }
+    }
+    .decoration{
+        display: none;
+    }
+
+    .image-separator{
+        display: none;
+
+    }
+    .block {
+        display: grid;
+        margin-bottom: 100px;
+
+        .horisontal {
+            display: none;
+        }
+
+        .side{
+            width: 100%;
+            float: unset;
+
+            order: 2;
+
+            &.with-text{
+                order: 1;
+            }
+
+            .vertical{
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 0
+                
+            }
+        }
+
+        
+
+        .with-text .text-wrapp{
+            margin-left: 20px;
+            margin-right: 20px;
+            // margin-top: 35px;
+            padding-left: 0;
+
+            h2{
+                font-size: 20px;
+                line-height: 36px;
+                margin-bottom: 32px;
+            }
+
+            p{
+
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 50px;
+            }
+        }
+
+        &.image-text .with-text .text-wrapp{
+            margin-top: 35px;
+            margin-bottom: 60px;
+            margin-top: 0
+        }
+    }
+
+    .map-picture{
+        margin-left: -50%
     }
 }

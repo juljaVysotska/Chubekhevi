@@ -76,7 +76,7 @@
 			</div>
 
 			<div class="blog-list">
-				<div class="blog-article">
+				<div class="blog-article fadeInUp wow">
 					<a href="#">
 						<div class="img-cover">
 							<img src="img/views/blog.jpg" alt="">
@@ -86,7 +86,7 @@
 					</a>
 					<p class="date">March 12 2020</p>
 				</div>
-				<div class="blog-article">
+				<div class="blog-article fadeInUp wow">
 					<a href="#">
 						<div class="img-cover">
 							<img src="img/views/blog.jpg" alt="">
@@ -96,7 +96,7 @@
 					</a>
 					<p class="date">March 12 2020</p>
 				</div>
-				<div class="blog-article">
+				<div class="blog-article fadeInUp wow">
 					<a href="#">
 						<div class="img-cover">
 							<img src="img/views/blog.jpg" alt="">
@@ -106,7 +106,7 @@
 					</a>
 					<p class="date">March 12 2020</p>
 				</div>
-				<div class="blog-article">
+				<div class="blog-article fadeInUp wow">
 					<a href="#">
 						<div class="img-cover">
 							<img src="img/views/blog.jpg" alt="">
@@ -116,7 +116,7 @@
 					</a>
 					<p class="date">March 12 2020</p>
 				</div>
-				<div class="blog-article">
+				<div class="blog-article fadeInUp wow">
 					<a href="#">
 						<div class="img-cover">
 							<img src="img/views/blog.jpg" alt="">
@@ -197,6 +197,15 @@
 				$('nav').removeClass('transparent');
 			}
 		});
+
+		let i = 0;
+
+	  	$(document).ready(function () {
+	  		$('.blog-article').each((el)=>{
+		  		$($('.blog-article')[i]).css('animation-delay', `${i/10}s`);
+		  		i++;
+		  	})
+	  	});
 	</script>
 
 	  
