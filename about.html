@@ -95,9 +95,7 @@
                             An interactive and guided experience where guests will taste and learn to identify (and appreciate!) the unique flavor profiles that give different teas their distinction
                     </p>
 
-                    <div class="controls fadeInUp wow">
-                        <a href="#" class="more outline">Learn more</a>
-                    </div>
+                   
                 </div>
                 
 
@@ -120,9 +118,9 @@
 
 
         <div class="map-picture" id='mapPicture'>
-        	<div class="map-overlay">
+        	<!-- <div class="map-overlay">
         		<h2>Start your journey to the treasure hidden in green-bathed mountains</h2>
-        	</div>
+        	</div> -->
         	<div class="map-container">
         		<div class="map">
 	        		<img class="back" src="img/map/bigmap_bg.jpg" alt="">
@@ -176,9 +174,7 @@
                             An interactive and guided experience where guests will taste and learn to identify (and appreciate!) the unique flavor profiles that give different teas their distinction
                     </p>
 
-                    <div class="controls fadeInUp wow">
-                        <a href="#" class="more outline">Learn more</a>
-                    </div>
+                   
                 </div>
                 
 
@@ -230,8 +226,8 @@
 
         </div>
 
-        <div class="image-separator fadeInUp wow">
-			<img class="view" src="img/views/view5.jpg" alt="">
+        <div class="image-separator fadeInUp wow"  data-parallax="scroll" data-image-src="img/views/view5.jpg">
+			<!-- <img class="view" src="img/views/view5.jpg" alt=""> -->
 
 			
         </div>
@@ -251,9 +247,7 @@
                             An interactive and guided experience where guests will taste and learn to identify (and appreciate!) the unique flavor profiles that give different teas their distinction
                     </p>
 
-                    <div class="controls fadeInUp wow">
-                        <a href="#" class="more outline">Learn more</a>
-                    </div>
+                    
                 </div>
                 
 
@@ -340,28 +334,53 @@
 
 		
 
-
-		$('.map-overlay').on({
-			scroll: function () {
-				console.log('scroll');
-			},
-			mouseover : ()=>{
-				console.log('mouseover');
-			},
-
-			mousewheel: function (e) {
-				console.log('scroll mousewheel');
-			},
+		$('.map-picture').slick({
+		  infinite: false,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: false,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear'
 		});
 
-		$(document).scroll(()=>{
-			const topOffset = $('#mapPicture').offset().top - $(window).scrollTop();
-			if(!topOffset){
-				$('.map-container').css('background','red')
-			}
-		})
+
+		$('.map-picture').on('mousewheel scroll', function (e) {
+
+			    if (e.originalEvent.deltaY>0) {
+			        $('.slick-next').click();
+			        if($('[data-slick-index="2"]').hasClass('slick-current') ){
+						$('.map-picture').css('pointer-events',"none")
+					}
+			    } else {
+			        $('.slick-prev').click();
+
+			       //  if($('.map-picture').offset().top - $(window).scrollTop() <=0){
+					     // $('.map-picture').css('pointer-events',"all")
+
+			       //  }
+			    }
+			    e.preventDefault();
+			});
+
+		$(window).scroll(function (e) {
+			console.log(e);
+			if (e.deltaY<0) {
+						// $('.map-picture').css('pointer-events',"")
+						console.log("m")
+					
+			    }
+			    e.preventDefault();
+		});
+
+
+		
+				
 
 		
 	</script>
+
+	<script src="js/parallax.js"></script>
+	
 </body>
 </html>

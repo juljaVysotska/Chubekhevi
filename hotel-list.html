@@ -529,7 +529,16 @@
 			if($(window).width() <= 768){
 				$('form').toggle('collapsed');
 			}
-		})
+		});
+
+		let i = 0;
+
+	  	$(document).ready(function () {
+	  		$('.card').each((el)=>{
+		  		$($('.card')[i]).css('animation-delay', `${i/5}s`);
+		  		i++;
+		  	})
+	  	});
 	</script>
 
 	<script src="js/script.js"></script>
