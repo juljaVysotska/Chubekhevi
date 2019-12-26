@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/index.css">
 
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" href="js/fancy-box/jquery.fancybox.css">	
 
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/wow.js"></script>
@@ -18,19 +19,7 @@
 </head>
 <body>
 
-	<div class="burger-menu_modal">
-		<a href="#" class="logo-burger"><img src="img/icon/Chubekhevi_logo-cut.svg" alt=""></a>
-
-		<img src="img/icon/close.svg" alt="" class="close">
-
-
-		<ul>
-			<li><a href="#">Chubekhevi</a></li>
-			<li><a href="#">Guesthouses</a></li>
-			<li><a href="#">Additional services</a></li>
-			<li class="actual"><a href="#">Blog</a></li>
-		</ul>
-	</div>
+	
 
 
 	<div class="burger-menu_modal">
@@ -49,7 +38,7 @@
 
 
 	<main>
-		<nav class="transparent">
+		<nav class="transparent first-screen">
 			<ul class="nav-list">
 				<li class="logo"><a href="#"><img src="img/icon/Chubekhevi_logo.svg" alt=""></a></li>
 				<li><a href="#">Chubekhevi</a></li>
@@ -115,6 +104,15 @@
 				
 				<div class="side">
 					<img class=" fadeInUp wow" src="img/left-side-img1.jpg" alt="">
+					<div class="controls fadeInUp wow">
+						<a class="video full" data-fancybox="html5-video" href="img/video.mp4">
+							<svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.643649 1.93807L17.3785 11.6L0.643649 21.2618L0.643649 1.93807Z" stroke="white" stroke-width="1.2873"/>
+							</svg>
+							Watch promo
+						</a>
+						
+					</div>
 				</div>
 
 				
@@ -123,9 +121,10 @@
 					<div class="text-wrapp fadeInUp wow">
 						<h2>Behold Nakra and Nenskra valleys connected by magnificent Utviri pass</h2>
 						<p>An interactive and guided experience where guests will taste and learn to identify (and appreciate!) the unique flavor profiles that give different teas their distinction</p>
+						
 					</div>
 					<div class="controls fadeInUp wow">
-						<a href="#" class="video full">
+						<a class="video full" data-fancybox="html5-video" href="img/video.mp4">
 							<svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0.643649 1.93807L17.3785 11.6L0.643649 21.2618L0.643649 1.93807Z" stroke="white" stroke-width="1.2873"/>
 							</svg>
@@ -349,5 +348,30 @@
 	</script>
 
 	<script src="js/script.js"></script>
+
+	<script src="js/fancy-box/jquery.fancybox.js"></script>
+
+	<script>
+			// let i = 1; 
+
+
+		$(window).on('scroll', ()=>{
+			if($(window).scrollTop()){
+				$('.headline').css({
+					'padding-top':'20%',
+					'transition': '.8s all ease-in-out'
+				});
+
+			}else{
+				$('.headline').css({
+					'padding-top': 0,
+					'transition': '.3s all ease-in-out'
+				});
+			}
+			// console.log(i)
+		});
+	</script>
+	
 </body>
+
 </html>

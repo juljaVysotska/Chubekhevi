@@ -46,13 +46,21 @@
 
             h1 {
                 .font-regular-Oxygen;
-                font-size: 82px;
-                line-height: 88px;
+                // font-size: 82px;
+                // line-height: 88px;
+                font-size: 4.2vw;
+                line-height: 5.6vw;
+
                 margin-bottom: 25px;
                 color: white;
                 display: inline-flex;
                 height: 88px;
                 flex-direction: column-reverse;
+
+                @media (max-width: 1360px){
+                    line-height: 96px;
+                    font-size: 72px;
+                }
             }
 
             p {
@@ -171,9 +179,13 @@ nav.transparent .nav-list .logo img {
                 .font-regular-Oxygen();
                 margin-bottom: 35px;
                 text-align: left;
-                font-size: 32px;
+                // font-size: 32px;
+                font-size: 2.3vw;
                 line-height: 56px;
                 color: #333;
+                @media (max-width: 1360px){
+                    font-size: 32px;
+                }
             }
 
             p {
@@ -226,8 +238,13 @@ nav.transparent .nav-list .logo img {
             left: 0;
             right: 0;
             .font-light-Oxygen();
-            font-size: 48px;
+            font-size: 2.3vw;
+            // font-size: 48px;
             line-height: 72px;
+
+            @media (max-width: 1360px){
+                font-size: 32px;
+            }
             color: #333333;
             max-width: 1200px;
             margin: 0 auto;
@@ -337,7 +354,7 @@ nav.transparent .nav-list .logo img {
     .first-view {
         padding-left: 20px;
         padding-right: 20px;
-        height: 530px;
+        // height: 530px;
         margin-top: 0;
 
 
@@ -406,7 +423,7 @@ nav.transparent .nav-list .logo img {
         .with-text .text-wrapp{
             margin-left: 20px;
             margin-right: 20px;
-            // margin-top: 35px;
+            margin-top: 0;
             padding-left: 0;
 
             h2{

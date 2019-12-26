@@ -15,10 +15,22 @@ $(window).scroll(()=>{
 	$('nav').removeClass('white');
 	$('nav').css('background-color','');
 	$('nav').addClass('transparent');
+	$('nav').css('position','absolute');
+	$('nav').addClass('first-screen');
+	
 
-	if($(window).scrollTop()){
+	if($(window).scrollTop() > 1200){
+		$('nav').removeClass('first-screen');
+
 		$('nav').addClass('white');
 		$('nav').css('background-color','white');
 		$('nav').removeClass('transparent');
+		$('nav').css({
+			'position':'fixed',
+			'top': 0,
+			'transition':'.3s all ease-in-out'
+		});
+		
+
 	}
 });
