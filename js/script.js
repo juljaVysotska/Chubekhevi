@@ -30,7 +30,6 @@ $(window).scroll(()=>{
 			'top': 0,
 			'transition':'.3s all ease-in-out'
 		});
-		
 
 	}
 });

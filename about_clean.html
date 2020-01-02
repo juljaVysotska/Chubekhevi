@@ -137,8 +137,6 @@
 
 		<div class="map-wrapp	">
 			<div class="map-overlay">
-        		<img class="back" src="img/map/bigmap_bg.jpg" alt="">
-				<img class="front" src="img/map/white-jverlay.png" alt="">
         		<h2>Start your journey to the treasure hidden in green-bathed mountains</h2>
         	</div>
 
@@ -149,7 +147,7 @@
 		        		<img class="back" src="img/map/bigmap_bg.jpg" alt="">
 		        		<img class="front" src="img/map/bigmap.png" alt="">
 
-		        		<div class="text-block">
+		        		<div class="text-block fadeInUp wow">
 		        			<p>
 		        				Chubekhevi is a blissful part of Zemo Svaneti, located in the north of Georgia at the foot of Western Caucassus mountains
 		        			</p>
@@ -161,7 +159,7 @@
 		        		<img class="back" src="img/map/Map terrain_bg.jpg" alt="">
 		        		<img class="front" src="img/map/Map terrain.png" alt="">
 
-		        		<div class="text-block">
+		        		<div class="text-block fadeInUp wow">
 		        			<p>
 		        				Joint of administrative units of Tchuberi and Nakra, there are Nenskra and Nakra valleys, joined by wondorous Utviri pass
 		        			</p>
@@ -173,7 +171,7 @@
 		        		<img class="back" src="img/map/MAP scheme_bg.jpg" alt="">
 		        		<img class="front" src="img/map/MAP scheme.png" alt="">
 
-		        		<div class="text-block">
+		        		<div class="text-block fadeInUp wow">
 		        			<p>
 		        				Blissful Chubekhevi can be reached every morning by taking Line Cab from Zugdidi in the west or form Mestia in the east
 		        			</p>
@@ -181,7 +179,6 @@
 		        	</div>
 		        </div>
 	        </div>
-
 		</div>
         
 
@@ -319,7 +316,7 @@
 				<a class="hashtag" href="#">#spend4seasonsingeorgia</a>
 
 				<a href="#" class="creators">
-					<img src="img/page.svg" alt="">
+					<img src="img/page.png" alt="">
 					<p>Developed by<br>PAGE Media Solutions</p>
 				</a>
 			</div>
@@ -367,13 +364,8 @@
 		  autoplay: false,
 		  speed: 500,
 		  fade: true,
-		  cssEase: 'linear',
-		  buttons: false
+		  cssEase: 'linear'
 		});
-
-		$('.map-wrapp').height($('.map-overlay').height() + 400);
-
-
 
 
 		$('.map-picture').on('mousewheel ', function (e) {
@@ -385,71 +377,36 @@
 					}
 			    } else {
 			        $('.slick-prev').click();
+			         // $('.map-picture').css('pointer-events',"")
 					
 					if($('[data-slick-index="0"]').hasClass('slick-current') ){
 						$('.map-picture').css('pointer-events',"none")
 					}
+			       //  if($('.map-picture').offset().top - $(window).scrollTop() <=0){
+					     // $('.map-picture').css('pointer-events',"all")
+
+			       //  }
 			    }
 			    e.preventDefault();
 			});
-
+		let height=	$('.map-wrapp').height();
 		$(window).scroll(()=>{
-			if($('.map-picture').offset().top <= $(window).scrollTop()){
-				$('.map-picture').css('pointer-events',"");
+			if($('.map-picture').offset().top !== $(window).scrollTop()){
+				$('.map-picture').css('pointer-events',"")
 
+			}
+
+			if($('.map-overlay').offset().top <= $(window).scrollTop()){
+				console.log('lsdkfj');
+
+				$('.map-picture').css('position','sticky')
 
 				
-				
+
+				// $('.map-wrapp').height(height + 300);
+
 			}
-
-
-		});
-
-		$('.map-wrapp').on('mousewheel', (e)=>{
-			if($(window).width() >= 1200){
-
-				if($('.map-overlay').offset().top <= $(window).scrollTop() + 200){
-					 if (e.originalEvent.deltaY>0) {
-					 	$('.map-overlay').css({
-					 		'opacity': 0,
-					 		'transition': '.3s all ease-in-out',
-					 		'pointer-events': 'none'
-					 	});
-
-					 	$('.map-wrapp .text-block').css({
-					 		'opacity': 1,
-					 		'transition': '.3s all ease-in-out'
-					 	})
-					 }
-					 // 
-				}else{
-					 	$('.map-overlay').css({
-					 		'opacity': 1,
-					 		'transition': '.3s all ease-in-out',
-					 		'pointer-events': ''
-
-					 	})
-					 }
-			}
-		});
-
-
-		$('.map-wrapp').on('scroll', () =>{
-			if($(window).width() >= 760 && $(window).width() <=1200){
-				$('.map-wrapp').height($(window).height());
-
-				if($('.map-overlay').offset().top <= $(window).scrollTop()){
-				 	$('.map-overlay').css({
-				 		'opacity': 0,
-				 		'transition': '.3s all ease-in-out',
-				 		'pointer-events': 'none'
-				 	})
-				 }
-			}
-		});
-
-
-		
+		})
 		
 
 		
