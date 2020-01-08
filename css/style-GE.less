@@ -9,12 +9,28 @@
 body {
     .font-regular-BPG()
 }
+.burger-menu_modal ul{
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    
+    li{
+        .font-medium-BPG();
+        font-size: 26px;       
+    }
+
+}
+
 
 
 nav {
     .nav-list {
         li {
-            margin-right: 48px;
+            margin-right: 3vw;
+            @media (max-width: 1360px){
+                margin-right: 48px;
+
+            }
 
             a {
                 .font-medium-BPG();
@@ -57,6 +73,12 @@ footer {
                 font-size: 45px;
                 line-height: 56px;
                 .font-medium-BPG();
+
+                @media (max-width: 760px){
+
+                    font-size: 36px;
+                    line-height: 46px;
+                }
             }
         }
     }
@@ -102,6 +124,15 @@ footer {
                 font-size: 45px;
                 line-height: 56px;
             }
+        }
+    }
+}
+
+
+@media (max-width: 760px){
+    footer{
+        .links{
+            height: 710px;
         }
     }
 }

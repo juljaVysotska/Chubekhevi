@@ -6,10 +6,17 @@
 .block {
     .with-text {
         .text-wrapp {
-            h2 {                
-                font-size: 45px;
+            h2 {            
+
+                font-size: 2.2vw;
+                line-height: 3vw;
                 .font-medium-BPG();
-                line-height: 56px;
+            
+                @media (max-width: 1360px){
+                    font-size: 45px;
+                    line-height: 56px;
+                }    
+                
             }
 
             p {

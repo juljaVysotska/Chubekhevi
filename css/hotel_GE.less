@@ -15,9 +15,15 @@
         position: relative;
 
         h1 {
-            font-size: 115px;
-            line-height: 128px;
             .font-medium-BPG();
+
+            font-size: 5.7vw;
+            line-height: 6vw;
+            
+            @media (max-width: 1360px){
+                font-size: 115px;
+                line-height: 128px;
+            }
         }
     }
 
@@ -25,7 +31,8 @@
 
         .location_country,
         .location_valley {
-            .font-regular-Oxygen();
+                    .font-book-BPG();
+            
             font-size: 28px;
             line-height: 28px;
         }
@@ -105,4 +112,44 @@
 
 
     }
+}
+
+
+@media (max-width: 760px) {
+    .info {
+
+        .block {
+
+
+            .text {
+                .title {
+                    .font-book-BPG();
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                .item {
+                    .description {
+                        .font-book-BPG();
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+
+                }
+            }
+        }
+
+        
+    }
+
+    .return {
+        p {
+            font-size: 36px;
+            line-height: 46px;
+            .font-medium-BPG();
+
+
+        }
+    }
+
 }
