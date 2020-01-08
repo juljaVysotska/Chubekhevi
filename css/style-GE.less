@@ -25,20 +25,30 @@ body {
 
 nav {
     .nav-list {
-        li {
-            margin-right: 3vw;
+        .logo{
             @media (max-width: 1360px){
-                margin-right: 48px;
+                margin-right: 15px;
 
             }
+        }
+        li {
+            margin-right:2vw;
 
             a {
-                .font-medium-BPG();
+                .font-regular-BPG();
                 font-size: 26px;
+            }
+
+
+            @media screen and (max-width: 1360px){
+                a{
+                    font-size: 24px;
+                } 
             }
         }
     }
 }
+
 
 
 .outline,
