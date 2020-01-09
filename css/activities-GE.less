@@ -1,6 +1,24 @@
 @import url(font.less);
 
+.section-title{
+    h1{
+        .font-medium-BPG(); 
+        font-size: 4.2vw;
+        line-height: 5.6vw;
 
+        @media screen and (max-width: 1360px){
+            line-height: 96px;
+            font-size: 72px;
+
+        }
+    }
+
+    p{
+        font-size: 22px;
+        line-height: 32px;
+        .font-light-BPG()
+    }
+}
 
 
 .block {
@@ -13,14 +31,15 @@
                 .font-medium-BPG();
             
                 @media (max-width: 1360px){
-                    font-size: 45px;
-                    line-height: 56px;
+                    
+                    line-height: 50px;
+                    font-size: 40px;
                 }    
                 
             }
 
             p {
-                .font-book-BPG();  
+                .font-light-BPG();  
                 font-size: 22px;
                 line-height: 32px;
             }
@@ -32,13 +51,22 @@
 .guide-cards{
 
 	h2{		
-        font-size: 80px;
-        line-height: 88px;
+        // font-size: 80px;
+        // line-height: 88px;
+
+        font-size: 2.2vw;
+        line-height: 3vw;
         .font-medium-BPG();
+    
+        @media (max-width: 1360px){
+            
+            line-height: 50px;
+            font-size: 40px;
+        } 
 	}
 
 	p:first-of-type{
-        .font-medium-BPG();
+        .font-book-BPG();
         font-size: 26px;
         line-height: 36px;
 	}
@@ -69,7 +97,7 @@
 		.more{
 		
 			.title{
-                .font-book-BPG();
+                .font-light-BPG();
                 font-size: 20px;
                 line-height: 28px;
 			}
@@ -78,29 +106,62 @@
 }
 
 
-.rotator-block {
 
-    h2 {
-        .font-book-BPG();
-        font-size: 66px;
-        line-height: 72px;
-    }    
 
-    .item {
 
-        .text-wrapp {
 
-            h2 {
-                .font-medium-BPG();
-                font-size: 67px;
-                line-height: 72px;
+@media (max-width: 760px){
+    .section-title{
+        h1{            
+            font-size: 45px;
+            line-height: 56px;
+        }
+
+        p{
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .guide-cards{
+
+        p:first-of-type{
+            .font-book-BPG();
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .cards-list{
+        
+        .card{
+
+            .place{         
+                font-size: 17px;
+                .font-book-BPG();
+                line-height: 28px;
             }
 
-            p {
-                .font-book-BPG();
+            .name{          
+                .font-medium-BPG();         
                 font-size: 45px;
                 line-height: 56px;
             }
+            .activity{
+                .font-medium-BPG();         
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            .more{
+            
+                .title{
+                    .font-book-BPG();
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
         }
     }
+
 }
