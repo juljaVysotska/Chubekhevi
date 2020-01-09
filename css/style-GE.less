@@ -97,17 +97,24 @@ footer {
 
 .section-title {
 	h1 {
-        font-size: 102px;
-        line-height: 112px;
-        .font-medium-BPG();
+        .font-medium-BPG(); 
+        font-size: 5.2vw;  
+        line-height: 5.9vw; 
+        letter-spacing: -0.05em;
+
+        // @media screen and (max-width: 1360px){
+        //     line-height: 96px;
+        //     font-size: 72px;
+
+        // }
         
 	}
 
-	p {		
-        .font-medium-BPG();
+	p {            
         font-size: 26px;
-        line-height: 36px;
-	}
+        line-height: 32px;
+        .font-light-BPG()
+    }
 }
 
 
@@ -170,6 +177,19 @@ footer {
                     line-height: 45px;
                 }
             }
+        }
+    }
+
+    .section-title {
+        h1 {
+            font-size: 45px;
+            line-height: 56px;
+            
+        }
+
+        p {            
+            font-size: 22px;
+            line-height: 32px;
         }
     }
 }

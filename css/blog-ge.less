@@ -5,20 +5,24 @@
 
 
     .blog-title {
-        display: flex;
         margin-bottom: 170px;
 
         h1 {
-           
-			font-size: 102px;
-			line-height: 112px;
-            .font-medium-BPG();
+           .font-medium-BPG(); 
+            font-size: 4.2vw;
+            line-height: 5.6vw;
+
+            @media screen and (max-width: 1360px){
+                line-height: 96px;
+                font-size: 72px;
+
+            }
         }
 
         p {            
 			font-size: 26px;
-			.font-medium-BPG();
-			line-height: 36px;
+            line-height: 32px;
+            .font-light-BPG()
         }
     }
 }
@@ -39,4 +43,37 @@
 		line-height: 28px;
     }
 
+}
+
+@media (max-width: 760px) {
+    .blog {
+        .blog-title {
+            margin-bottom: 100px;
+
+            h1 {
+                font-size: 45px;
+                line-height: 56px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .blog-article {
+
+        h3 {
+          
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .date {        
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+    }
 }
