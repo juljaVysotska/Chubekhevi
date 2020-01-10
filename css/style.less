@@ -576,8 +576,6 @@ footer {
 
 
 
-
-
 .clearfix {
     width: 100%;
     display: flex;
@@ -673,7 +671,7 @@ footer {
 
     .decoration {
         height: unset;
-        width: unset;
+        width: calc(100% / 2.4);
         position: absolute;
         bottom: -45px;
         right: -45px;
@@ -711,6 +709,11 @@ footer {
         display: block;
         width: 50%;
         color: #333;
+        padding-top: 1.689vw;
+
+        @media (max-width: 1200px){
+            padding-top:0
+        }
     }
 }
 
@@ -723,7 +726,8 @@ footer {
         position: absolute;
         right: -51px;
         bottom: 230px;
-        z-index: -1
+        z-index: -1;
+        width: calc(100% / 2.4);
     }
 
     h2 {

@@ -100,9 +100,10 @@
 			<div class="anhor">
 				<img src="img/icon/anhor.svg" alt="">
 				<p>Scroll down to discover</p>
+				<img class="decoration" src="img/icon/decoration.svg" alt="">
             </div>
             
-            <img class="decoration" src="img/icon/decoration.svg" alt="">
+            
         </div>
         
         <div class="block   fadeInUp wow">
@@ -337,7 +338,7 @@
 	<script>
 
 		$('.anhor').click(function () {
-			$(window).scrollTop($('.greeting').offset().top);
+			$(window).scrollTop($('.block').offset().top);
 		});
 
 		$('.rotator').slick({

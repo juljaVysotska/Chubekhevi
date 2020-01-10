@@ -38,7 +38,7 @@ nav.white .burger-menu div {
         left: 0;
     }
 
-   
+
 
     .headline {
         position: relative;
@@ -66,7 +66,7 @@ nav.white .burger-menu div {
                 height: 88px;
                 flex-direction: column-reverse;
 
-                @media (max-width: 1360px){
+                @media (max-width: 1360px) {
                     line-height: 96px;
                     font-size: 72px;
                 }
@@ -83,13 +83,7 @@ nav.white .burger-menu div {
 
     }
 
-    .decoration{
-        position: absolute;
-        top: 10px;
-        right: 45px;
-        transform: rotate(180deg);
 
-    }
 
     .anhor {
         display: inline-flex;
@@ -102,6 +96,7 @@ nav.white .burger-menu div {
 
         img {
             margin-right: 15px;
+
         }
 
         p {
@@ -112,8 +107,19 @@ nav.white .burger-menu div {
             font-size: 16px;
             line-height: 32px;
         }
+
+        .decoration {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: unset;
+            right: calc(-100% - 100vw / 8);
+            width: calc(100vw / 10);
+            margin: 2px 0px 0px 0px;
+
+        }
     }
 }
+
 nav {
     position: fixed;
 }
@@ -132,8 +138,8 @@ nav.transparent .nav-list .logo img {
 
     .side {
         width: 50%;
-		float: left;
-		position: relative;
+        float: left;
+        position: relative;
 
         &:last-child {
             float: unset;
@@ -149,32 +155,34 @@ nav.transparent .nav-list .logo img {
             margin-left: 16.6%;
             //height: calc((100vw ) *1.5);
 
-		}
-		
-		.decoration{
-			position: absolute;
-			bottom: -30px;
-			right: 110px;
+        }
 
-		}
+        .decoration {
+            position: absolute;
+            bottom: -30px;
+            right: 110px;
+            width: calc(100% / 5.5);
+
+
+        }
     }
 
     .image {
         background: transparent url(../img/views/image3.jpg) center center no-repeat;
         background-size: cover;
         background-attachment: fixed;
-	}
-	
-	&.image-text .with-text {
-		.text-wrapp {
-			padding-left: 0;
-			margin-top: 170px;
-		}
-	}
+    }
+
+    &.image-text .with-text {
+        .text-wrapp {
+            padding-left: 0;
+            margin-top: 170px;
+        }
+    }
 
     .with-text {
         .text-wrapp {
-           padding-left: 16.6%;
+            padding-left: 16.6%;
             margin-bottom: 167px;
             margin-top: 130px;
 
@@ -189,11 +197,11 @@ nav.transparent .nav-list .logo img {
                 margin-bottom: 35px;
                 text-align: left;
                 color: #333;
-                
+
                 // line-height: 56px;
                 // font-size: 32px;
 
-                font-size: 1.8vw;  
+                font-size: 1.8vw;
                 line-height: 3.2vw;
             }
 
@@ -227,33 +235,33 @@ nav.transparent .nav-list .logo img {
     }
 }
 
-main{
+main {
     overflow: unset;
 }
 
-.map-wrapp{
+.map-wrapp {
     margin-bottom: 175px;
-   position: relative;
+    position: relative;
     top: 0;
     margin-top: 125px;
     // height: 200vh;
-    
-    .slick-arrow{
+
+    .slick-arrow {
         opacity: 0;
     }
-    
-    .map-overlay{
+
+    .map-overlay {
         // background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-        
+
         width: 100%;
         position: absolute;
-        top: 0;        
+        top: 0;
         z-index: 999;
-        h2{
+
+        h2 {
             position: absolute;
             top: 245px;
-            z-index: 3
-            ;
+            z-index: 3;
             left: 0;
             right: 0;
             .font-light-Oxygen();
@@ -261,69 +269,73 @@ main{
             // font-size: 48px;
             line-height: 72px;
 
-            @media (max-width: 1360px){
+            @media (max-width: 1360px) {
                 font-size: 32px;
             }
+
             color: #333333;
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
 
-        img{
+        img {
             height: auto;
             width: 100%;
 
         }
 
-        .back{
+        .back {
             position: absolute;
             z-index: -1
         }
-        .front{
+
+        .front {
             z-index: 1
         }
     }
-    
-    .map-container:last-child{
+
+    .map-container:last-child {
         pointer-events: none
     }
 
-    .map-picture{
-        
+    .map-picture {
+
         width: 100%;
         height: auto;
         position: sticky;
         top: 0;
     }
-    .map{
-       // position: absolute;
+
+    .map {
+        // position: absolute;
         top: 0;
-        left:0;
+        left: 0;
         width: 100%;
         height: auto;
         // opacity: 0;
 
 
-        
-        .back,.front{
+
+        .back,
+        .front {
             width: 100%;
             height: auto;
         }
 
-        .front{
+        .front {
             position: absolute;
-            top:0;
-            left:0 ;
+            top: 0;
+            left: 0;
         }
 
-        &.shown{
+        &.shown {
             opacity: 1;
             transition: .3s all ease;
         }
     }
 
-    .text-block{
+    .text-block {
         opacity: 0;
         position: absolute;
         top: 300px;
@@ -333,7 +345,7 @@ main{
         padding: 67px 92px 61px 62px;
         width: 629px;
 
-        p{
+        p {
             .font-light-Oxygen();
             font-size: 19px;
             line-height: 36px;
@@ -343,60 +355,63 @@ main{
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1200px){
+@media screen and (min-width: 760px) and (max-width: 1200px) {
 
-    .decoration{
+    .decoration {
         display: none;
     }
-    .image-separator{
+
+    .image-separator {
         display: none;
 
     }
 
-    .first-view .headline .text-wrapp{
+    .first-view .headline .text-wrapp {
         width: 75%;
     }
 
-    .block{
+    .block {
         .vertical {
             display: none;
         }
 
-        .side{
+        .side {
             width: 100%;
             float: unset;
 
-            .text-wrapp{
+            .text-wrapp {
                 order: 2;
             }
-            img{
+
+            img {
                 order: 1;
             }
         }
 
-        &.image-text{
-            .with-text{
-                .text-wrapp{
+        &.image-text {
+            .with-text {
+                .text-wrapp {
                     margin-top: 80px;
                     margin-bottom: 0;
                 }
             }
         }
 
-        .with-text .text-wrapp{
+        .with-text .text-wrapp {
             margin-left: 40px;
             margin-right: 40px;
             padding-left: 0;
             margin-bottom: 100px;
 
-            h2, p{
-               max-width: unset;
+            h2,
+            p {
+                max-width: unset;
             }
         }
     }
 
-    .map-wrapp{
-        .slick-arrow{
+    .map-wrapp {
+        .slick-arrow {
             opacity: 1;
         }
 
@@ -445,19 +460,20 @@ main{
             }
         }
 
-        .map-overlay{
-            .back{
+        .map-overlay {
+            .back {
                 opacity: 0;
             }
         }
-        .text-block{
+
+        .text-block {
             top: 150px;
             width: 45%;
 
             left: 50px;
             padding: 30px;
 
-            p{
+            p {
 
                 font-size: 16px;
                 color: #333;
@@ -467,7 +483,7 @@ main{
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 760px) {
     .first-view {
         padding-left: 20px;
         padding-right: 20px;
@@ -501,14 +517,16 @@ main{
             display: none;
         }
     }
-    .decoration{
+
+    .decoration {
         display: none;
     }
 
-    .image-separator{
+    .image-separator {
         display: none;
 
     }
+
     .block {
         display: grid;
         margin-bottom: 100px;
@@ -517,39 +535,38 @@ main{
             display: none;
         }
 
-        .side{
+        .side {
             width: 100%;
             float: unset;
 
             order: 2;
 
-            &.with-text{
+            &.with-text {
                 order: 1;
             }
 
-            .vertical{
-                    width: 100%;
-                    height: 100%;
-                    margin-left: 0
-                
+            .vertical {
+                width: 100%;
+                height: 100%;
+                margin-left: 0
             }
         }
 
-        
 
-        .with-text .text-wrapp{
+
+        .with-text .text-wrapp {
             margin-left: 20px;
             margin-right: 20px;
             margin-top: 0;
             padding-left: 0;
 
-            h2{
+            h2 {
                 font-size: 20px;
                 line-height: 36px;
                 margin-bottom: 32px;
             }
 
-            p{
+            p {
 
                 font-size: 14px;
                 line-height: 28px;
@@ -557,7 +574,7 @@ main{
             }
         }
 
-        &.image-text .with-text .text-wrapp{
+        &.image-text .with-text .text-wrapp {
             margin-top: 35px;
             margin-bottom: 60px;
             margin-top: 0
@@ -567,10 +584,11 @@ main{
 
 
 
-    .map-wrapp{
+    .map-wrapp {
         margin-bottom: 80px;
         margin-top: 100px;
-        .slick-arrow{
+
+        .slick-arrow {
             opacity: 1;
         }
 
@@ -618,29 +636,31 @@ main{
             }
         }
 
-        .map-overlay{
+        .map-overlay {
             pointer-events: all;
             overflow: hidden;
 
-            h2{
+            h2 {
                 top: 30px;
                 margin-left: 10px;
                 margin-right: 10px;
             }
-            .back{
+
+            .back {
                 opacity: 0;
             }
 
-            img{
+            img {
                 width: auto;
                 height: 100%;
             }
         }
 
-        .map-picture{
+        .map-picture {
             top: 150px;
         }
-        .text-block{
+
+        .text-block {
             position: unset;
             width: 100%;
             left: 50px;
@@ -648,7 +668,7 @@ main{
             opacity: 1;
             box-shadow: unset;
 
-            p{
+            p {
 
                 font-size: 16px;
                 color: #333;
