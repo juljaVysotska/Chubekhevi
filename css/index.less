@@ -254,7 +254,7 @@ nav.white .burger-menu div {
     margin-bottom: 177px;
 
     img {
-        position: absolute;
+        position: absolute !important;
         top: -50px !important;
         left: -80px !important;
 
@@ -268,8 +268,10 @@ nav.white .burger-menu div {
         width: 270px;
         right: 150px;
         bottom: 90px;
+        top: unset !important;
+        left: unset !important;
         z-index: 111;
-        display: flex;
+        display: flex !important;
         align-items: center;
 
         p {
@@ -282,7 +284,7 @@ nav.white .burger-menu div {
         }
 
         img {
-            position: unset;
+            position: unset !important;
             width: 31.25px;
             height: 47.4px;
             margin-left: 15px;
@@ -338,8 +340,10 @@ nav.white .burger-menu div {
                 margin-bottom: 35px;
                 text-align: left;
                 color: #333;
-                font-size: 2.3vw;
-                line-height: 3.58vw;
+                // font-size: 2.3vw;
+                // line-height: 3.58vw;
+                font-size: 1.8vw;  
+                line-height: 3.2vw;
 
                 @media (max-width: 1360px){
                     font-size: 32px;
