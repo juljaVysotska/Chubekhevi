@@ -61,26 +61,6 @@
 	}
 
 
-	// .text-wrapp{
-	// 	h2{
-	// 		.font-medium-BPG();
-	// 		font-size: 3.4vw;  
- //            line-height: 4vw;
- //            // max-width: 50%;
-
- //            @media (max-width: 1360px){
- //                font-size: 45px;
- //                line-height: 56px;
- //            }
-	// 	}
-	// 	p{
-	// 		.font-book-BPG();			
-	// 		font-size: 22px;
-	// 		line-height: 32px;
- //            // max-width: 50%;
-	// 	}
-	// }
-
     .block-with-image{
         .rigth-side{
             width: 50%;
@@ -133,7 +113,7 @@
 }
 
 
-.blog {
+.block.blog {
 
     .blog-article {
 
@@ -168,20 +148,39 @@
 }
 @media screen and (max-width: 760px) {
 
-    .greeting {
+    .greeting{
+    
 
-
-        .title {
+        .title{
             max-width: unset;
+            font-size: 34px;
+            line-height: 38px;
+            letter-spacing: -0.05em;
         }
+
 
         .block-with-image{
             .rigth-side{
                 width: 100%;
+               
+
+                .text-wrapp{
+                    h2{
+                        font-size: 28px;
+                        line-height: 36px;
+                        letter-spacing: -0.05em;
+                    }
+                    p{
+                        .font-book-BPG();           
+                        font-size: 18px;
+                        line-height: 28px;
+                        max-width: 100%;
+                    }
+                }
+
             }
         }
     }
-
 
     .first-view {
 
@@ -190,18 +189,57 @@
 
             .text-wrapp {
                 h1 {
-                    
                     font-size: 45px;
-                    line-height: 56px;
+                    line-height: 48px;
+                    letter-spacing: -0.05em;
                     
                 }
 
                 p{
                     .font-book-BPG();  
-                    font-size: 22px;
+                    font-size: 24px;
                     line-height: 32px;
 
                 }
+            }
+        }
+    }
+
+    .block {
+        .with-text {
+            .text-wrapp {
+                h2 {            
+                    font-size: 28px;
+                    line-height: 36px;
+                    max-width: 100%;
+                    letter-spacing: -0.05em;                       
+                }
+
+                p {
+                    
+                    font-size: 18px;
+                    line-height: 28px;
+                    max-width: 100%;
+                    
+                }
+            }
+        }
+    }
+
+    
+
+    .block.blog {
+
+        .blog-article {
+
+            h3 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .date {
+                font-size: 16px;
+                line-height: 28px;
             }
         }
     }

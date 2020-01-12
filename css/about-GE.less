@@ -4,6 +4,8 @@
 .first-view {
     .headline {
         .text-wrapp {
+            width: 80%;
+            padding-top: 70px;
 
             h1 {
                 font-size: 6vw;
@@ -50,6 +52,51 @@
                 font-size: 22px;
                 line-height: 32px;
                 max-width: 80%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 760px){
+    .first-view {
+        height: 100vh;
+        .headline {
+            .text-wrapp {
+
+                h1 {
+                    .font-medium-BPG();                    
+                    font-size: 45px;
+                    line-height: 48px;
+                    letter-spacing: -0.05em;
+                }
+
+                p {                    
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    .block {
+        .with-text {
+            .text-wrapp {
+                margin-bottom: 80px;
+                h2 {            
+                    font-size: 28px;
+                    line-height: 36px;
+                    max-width: 100%;
+                    letter-spacing: -0.05em;                       
+                }
+
+                p {
+                    
+                    font-size: 18px;
+                    line-height: 28px;
+                    max-width: 100%;
+                    
+                }
             }
         }
     }
