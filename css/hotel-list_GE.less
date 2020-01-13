@@ -3,20 +3,20 @@
 
 
 .block {
-    
+
 
     .with-text {
         .text-wrapp {
-            h2 {                
-                font-size: 2.8vw;  
-                line-height: 3.2vw; 
-                letter-spacing: -0.05em; 
+            h2 {
+                font-size: 2.8vw;
+                line-height: 3.2vw;
+                letter-spacing: -0.05em;
                 .font-regular-BPG();
                 max-width: 100%;
             }
 
             p {
-                .font-book-BPG();  
+                .font-book-BPG();
                 font-size: 22px;
                 line-height: 32px;
                 max-width: 100%;
@@ -26,92 +26,130 @@
 }
 
 
-.hotel-search{
-    h2{
+.hotel-search {
+    h2 {
         .font-medium-BPG();
         // font-size: 45px;
         font-size: 2.3vw;
 
         line-height: 56px;
-        @media (max-width: 1360px){
+
+        @media (max-width: 1360px) {
             font-size: 45px;
         }
     }
 
-    .input-wrapp{ 
-        label{
-            .font-book-BPG();            
+    .input-wrapp {
+        label {
+            .font-book-BPG();
             font-size: 17px;
             line-height: 28px;
         }
 
-        
+
     }
 }
 
-.hotel-list{
-    .card{
-        
+.hotel-list {
+    .card {
 
-        .place{
-            .font-book-BPG();            
+
+        .place {
+            .font-book-BPG();
             font-size: 17px;
             line-height: 28px;
         }
 
-        .valley{
-            .font-book-BPG();            
+        .valley {
+            .font-book-BPG();
             font-size: 17px;
             line-height: 28px;
         }
 
-        .name{
+        .name {
             font-size: 28px;
-            .font-medium-BPG();            
+            .font-medium-BPG();
             line-height: 36px;
         }
-        
 
-        .more{
-            .info{
-                .item{
-                    p{  
+
+        .more {
+            .info {
+                .item {
+                    p {
                         font-size: 20px;
-                        .font-book-BPG();            
+                        .font-book-BPG();
                         line-height: 28px;
 
-                        span{                    
+                        span {
                             .font-regular-Oxygen();
                         }
                     }
-                    
+
                 }
             }
 
-            
-           
+
+
         }
     }
-    
+
 }
-@media screen and (min-width: 760px) and (max-width: 1200px){
-    .hotel-search{
-        .location{
+
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+    .hotel-search {
+        .location {
             width: calc(100% - 240px - 100px);
         }
 
-        button{
+        button {
             margin-top: calc(75px - 48px);
         }
 
+    }
+
+
+    .hotel-search {
+        h2 {
+
+
+            font-size: 45px;
+            line-height: 72px;
+        }
+
+        .input-wrapp {
+            label {
+
+                font-size: 17px;
+                line-height: 28px;
+            }
+
+
+        }
+    }
+
+    .section-title {
+        h1 {
+            .font-medium-BPG();
+
+            font-size: 102px;
+            line-height: 112px;
+            letter-spacing: -0.05em;
+        }
+
+        p {
+
+            font-size: 26px;
+            line-height: 36px;
+        }
     }
 }
 
 @media (max-width: 760px) {
 
-    .hotel-search{
-        h2{
-            
+    .hotel-search {
+        h2 {
+
             font-size: 34px;
             line-height: 38px;
             letter-spacing: -0.05em;
@@ -119,20 +157,20 @@
 
 
 
-        .input-wrapp{ 
-            label{
-                .font-book-BPG();                 
+        .input-wrapp {
+            label {
+                .font-book-BPG();
                 font-size: 17px;
                 line-height: 28px;
             }
 
-            select{                
-                .font-medium-BPG();            
+            select {
+                .font-medium-BPG();
                 font-size: 26px;
                 line-height: 36px;
             }
 
-            
+
         }
     }
 
@@ -140,46 +178,48 @@
         h1 {
             font-size: 45px;
             line-height: 56px;
-            
+
         }
 
-        p {            
+        p {
             font-size: 22px;
             line-height: 32px;
         }
     }
 
-    .hotel-list{
-        .card{
-            .place,.valley{
-                .font-book-BPG();            
+    .hotel-list {
+        .card {
+
+            .place,
+            .valley {
+                .font-book-BPG();
                 font-size: 17px;
                 line-height: 20px;
             }
 
-            .name{
+            .name {
                 margin-top: 10px;
-                .font-medium-BPG();             
+                .font-medium-BPG();
                 font-size: 28px;
                 line-height: 36px;
             }
-            
 
-            .more{
-                .info{
-                    .item{
-                        p{  
-                            .font-book-BPG();    
+
+            .more {
+                .info {
+                    .item {
+                        p {
+                            .font-book-BPG();
                             font-size: 20px;
                             line-height: 28px;
 
-                            span{                    
-                                .font-regular-Oxygen();                                
+                            span {
+                                .font-regular-Oxygen();
                                 font-size: 14px;
                                 line-height: 28px;
                             }
                         }
-                        
+
                     }
                 }
             }
@@ -190,19 +230,20 @@
         .with-text {
             .text-wrapp {
                 margin-bottom: 80px;
-                h2 {            
+
+                h2 {
                     font-size: 28px;
                     line-height: 36px;
                     max-width: 100%;
-                    letter-spacing: -0.05em;                       
+                    letter-spacing: -0.05em;
                 }
 
                 p {
-                    
+
                     font-size: 18px;
                     line-height: 28px;
                     max-width: 100%;
-                    
+
                 }
             }
         }

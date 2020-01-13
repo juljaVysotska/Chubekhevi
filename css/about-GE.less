@@ -38,13 +38,7 @@
                 line-height: 3.2vw; 
                 letter-spacing: -0.05em; 
                 .font-regular-BPG();
-                max-width: 80%;
-            
-                // @media (max-width: 1360px){
-                    
-                //     line-height: 50px;
-                //     font-size: 40px;
-                // }    
+                max-width: 80%;  
                 
             }
 
@@ -58,6 +52,50 @@
     }
 }
 
+@media screen and (min-width: 760px) and (max-width: 1200px){
+    .first-view {
+        // height: 100vh;
+        padding-left: 40px;
+        
+        .headline {
+            .text-wrapp {
+                width: 100%;
+                h1 {                    
+                    font-size: 102px;
+                    line-height: 112px;
+                    letter-spacing: -0.05em;
+                    max-width: 80%;
+
+                }
+
+                p {     
+                    font-size: 26px;
+                    line-height: 36px;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+
+    .block {
+        .with-text {
+            .text-wrapp {
+                h2 {
+                    font-size: 45px;
+                    line-height: 56px; 
+                    
+                }
+
+                p {
+                    
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+}
 
 @media (max-width: 760px){
     .first-view {
