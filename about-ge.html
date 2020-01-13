@@ -137,9 +137,9 @@
 
 		<div class="map-wrapp	">
 			<div class="map-overlay">
-        		<img class="back" src="img/map/bigmap_bg.jpg" alt="">
+        		<!-- <img class="back" src="img/map/bigmap_bg.jpg" alt=""> -->
 				<img class="front" src="img/map/white-jverlay.png" alt="">
-        		<h2>Start your journey to the treasure hidden in green-bathed mountains</h2>
+        		<h2>დაიწყეთ თქვენი მოგზაურობა მწვანე მოცურავე მთებში ჩაფლულ საგანძურზე</h2>
         	</div>
 
         	<div class="map-picture" id='mapPicture'>
@@ -151,7 +151,7 @@
 
 		        		<div class="text-block">
 		        			<p>
-		        				Chubekhevi is a blissful part of Zemo Svaneti, located in the north of Georgia at the foot of Western Caucassus mountains
+		        				ჩუბეხევი ზემო სვანეთის ნეტარი ნაწილია, რომელიც მდებარეობს საქართველოს ჩრდილოეთით, დასავლეთ კავკასიონის მთების ძირში
 		        			</p>
 		        		</div>
 		        	</div>
@@ -163,7 +163,7 @@
 
 		        		<div class="text-block">
 		        			<p>
-		        				Joint of administrative units of Tchuberi and Nakra, there are Nenskra and Nakra valleys, joined by wondorous Utviri pass
+		        				ჭუბერის და ნაკრას ადმინისტრაციულ ერთეულებს შორის არის ნენსკრას და ნაკრას ხეობები, რომელსაც უერთდება საოცარი უტვრის უღელტეხილი
 		        			</p>
 		        		</div>
 		        	</div>
@@ -174,8 +174,8 @@
 		        		<img class="front" src="img/map/MAP scheme.png" alt="">
 
 		        		<div class="text-block">
-		        			<p>
-		        				Blissful Chubekhevi can be reached every morning by taking Line Cab from Zugdidi in the west or form Mestia in the east
+		        			<p>        				
+							ნეტარი ჩუბეხევის მიღწევა შეგიძლიათ ყოველ დილით დასავლეთით ზუგდიდიდან Line Cab- ის აღებით ან აღმოსავლეთით მესტიის ფორმით.
 		        			</p>
 		        		</div>
 		        	</div>
@@ -363,85 +363,87 @@
 		  speed: 500,
 		  fade: true,
 		  cssEase: 'linear',
-		  buttons: false
+		  buttons: false,
+  		  nextArrow: '<button type="button" class="slick-next"></button>',
+		  prevArrow:'<button type="button" class="slick-prev"></button>'
 		});
 
-		$('.map-wrapp').height($('.map-overlay').height() + 400);
+		// $('.map-wrapp').height($('.map-overlay').height() + 400);
 
 
 
 
-		$('.map-picture').on('mousewheel ', function (e) {
+		// $('.map-picture').on('mousewheel ', function (e) {
 
-			    if (e.originalEvent.deltaY>0) {
-			        $('.slick-next').click();
-			        if($('[data-slick-index="2"]').hasClass('slick-current') ){
-						$('.map-picture').css('pointer-events',"none")
-					}
-			    } else {
-			        $('.slick-prev').click();
+		// 	    if (e.originalEvent.deltaY>0) {
+		// 	        $('.slick-next').click();
+		// 	        if($('[data-slick-index="2"]').hasClass('slick-current') ){
+		// 				$('.map-picture').css('pointer-events',"none")
+		// 			}
+		// 	    } else {
+		// 	        $('.slick-prev').click();
 					
-					if($('[data-slick-index="0"]').hasClass('slick-current') ){
-						$('.map-picture').css('pointer-events',"none")
-					}
-			    }
-			    e.preventDefault();
-			});
+		// 			if($('[data-slick-index="0"]').hasClass('slick-current') ){
+		// 				$('.map-picture').css('pointer-events',"none")
+		// 			}
+		// 	    }
+		// 	    e.preventDefault();
+		// 	});
 
-		$(window).scroll(()=>{
-			if($('.map-picture').offset().top <= $(window).scrollTop()){
-				$('.map-picture').css('pointer-events',"");
+		// $(window).scroll(()=>{
+		// 	if($('.map-picture').offset().top <= $(window).scrollTop()){
+		// 		$('.map-picture').css('pointer-events',"");
 
 
 				
 				
-			}
+		// 	}
 
 
-		});
+		// });
 
-		$('.map-wrapp').on('mousewheel', (e)=>{
-			if($(window).width() >= 1200){
+		// $('.map-wrapp').on('mousewheel', (e)=>{
+		// 	if($(window).width() >= 1200){
 
-				if($('.map-overlay').offset().top <= $(window).scrollTop() + 200){
-					 if (e.originalEvent.deltaY>0) {
-					 	$('.map-overlay').css({
-					 		'opacity': 0,
-					 		'transition': '.3s all ease-in-out',
-					 		'pointer-events': 'none'
-					 	});
+		// 		if($('.map-overlay').offset().top <= $(window).scrollTop() + 200){
+		// 			 if (e.originalEvent.deltaY>0) {
+		// 			 	$('.map-overlay').css({
+		// 			 		'opacity': 0,
+		// 			 		'transition': '.3s all ease-in-out',
+		// 			 		'pointer-events': 'none'
+		// 			 	});
 
-					 	$('.map-wrapp .text-block').css({
-					 		'opacity': 1,
-					 		'transition': '.3s all ease-in-out'
-					 	})
-					 }
-					 // 
-				}else{
-					 	$('.map-overlay').css({
-					 		'opacity': 1,
-					 		'transition': '.3s all ease-in-out',
-					 		'pointer-events': ''
+		// 			 	$('.map-wrapp .text-block').css({
+		// 			 		'opacity': 1,
+		// 			 		'transition': '.3s all ease-in-out'
+		// 			 	})
+		// 			 }
+		// 			 // 
+		// 		}else{
+		// 			 	$('.map-overlay').css({
+		// 			 		'opacity': 1,
+		// 			 		'transition': '.3s all ease-in-out',
+		// 			 		'pointer-events': ''
 
-					 	})
-					 }
-			}
-		});
+		// 			 	})
+		// 			 }
+		// 	}
+		// });
 
 
-		$('.map-wrapp').on('scroll', () =>{
-			if($(window).width() >= 760 && $(window).width() <=1200){
-				$('.map-wrapp').height($(window).height());
+		// $('.map-wrapp').on('scroll', () =>{
+		// 	if($(window).width() >= 760 && $(window).width() <=1200){
+		// 		$('.map-wrapp').height($(window).height());
 
-				if($('.map-overlay').offset().top <= $(window).scrollTop()){
-				 	$('.map-overlay').css({
-				 		'opacity': 0,
-				 		'transition': '.3s all ease-in-out',
-				 		'pointer-events': 'none'
-				 	})
-				 }
-			}
-		});
+		// 		if($('.map-overlay').offset().top <= $(window).scrollTop()){
+		// 		 	$('.map-overlay').css({
+		// 		 		'opacity': 0,
+		// 		 		'transition': '.3s all ease-in-out',
+		// 		 		'pointer-events': 'none'
+		// 		 	})
+		// 		 }
+		// 	}
+		// });
 
 
 		const scene = document.getElementById('separateImage');
