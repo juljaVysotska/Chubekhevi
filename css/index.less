@@ -520,7 +520,7 @@ nav.white .nav-list .logo{
         .headline {
             .logo.big {
                 float: unset;
-                margin-bottom: 60px;
+                margin-bottom: 0;
             }
 
             .text-wrapp {
@@ -599,6 +599,7 @@ nav.white .nav-list .logo{
 
 
 
+    
     .block {
         .vertical {
             display: none;
@@ -608,11 +609,8 @@ nav.white .nav-list .logo{
             width: 100%;
             float: unset;
 
-
-
+            
         }
-
-
 
         &.image-text {
             .with-text {
@@ -627,11 +625,21 @@ nav.white .nav-list .logo{
             margin-left: 40px;
             margin-right: 40px;
             padding-left: 0;
-            margin-bottom: 75px;
+            margin-bottom: 100px;
 
             h2,
             p {
                 max-width: unset;
+            }
+
+            h2{                
+                font-size: 32px;
+                line-height: 56px;
+            }
+
+            p{                
+                font-size: 16px;
+                line-height: 32px;
             }
         }
     }
@@ -651,6 +659,60 @@ nav.white .nav-list .logo{
             }
         }
     }
+
+
+    .first-view {
+
+
+        .headline {
+            .text-wrapp {
+
+                h1 {                  
+                    font-size: 72px;
+                    line-height: 96px;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    max-width: 100%;
+                    font-size: 19px;
+                    line-height: 36px;
+                }
+            }
+        }
+
+    }
+
+
+    .greeting {
+
+        .title {
+            text-align: left;
+            
+                font-size: 48px;
+                line-height: 72px;
+            max-width: 100%;
+        }
+
+       .text-wrapp {
+
+            h2,
+            p {
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 32px;
+                line-height: 56px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 760px) {
@@ -707,6 +769,7 @@ nav.white .nav-list .logo{
             font-size: 24px;
             line-height: 40px;
             margin-bottom: 70px;
+            max-width: 100%;
         }
 
         .block-with-image {
@@ -801,12 +864,10 @@ nav.white .nav-list .logo{
         h2 {
             margin-left: 20px;
             margin-right: 20px;
-            font-size: 2.4vw;
-            line-height: 3.3vw;
-            @media (max-width: 1360px){
-                line-height: 56px;
-                font-size: 48px;
-            }
+            
+            font-size: 24px;
+            line-height: 40px;
+            
             margin-bottom: 25px;
         }
 
@@ -856,12 +917,9 @@ nav.white .nav-list .logo{
                 width: calc(100% - 60px);
 
                 h2 {
-                    font-size: 2.4vw;
-                    line-height: 3.3vw;
-                    @media (max-width: 1360px){
-                        line-height: 56px;
-                        font-size: 48px;
-                    }
+                    
+                    font-size: 24px;
+                    line-height: 30px;
                 }
 
                 p {
