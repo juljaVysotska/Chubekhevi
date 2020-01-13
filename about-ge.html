@@ -214,8 +214,8 @@
 
         </div>
 
-        <div class="image-separator fadeInUp wow">
-			<img class="view" src="img/views/view6.jpg" alt="">
+        <div class="image-separator fadeInUp wow" id="separateImage">
+			<img class="view"  data-depth="0.2" src="img/views/view6.jpg" alt="">
 
 			
         </div>
@@ -328,7 +328,6 @@
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/plax.js"></script>
 
 
 	<script>
@@ -344,12 +343,12 @@
 		  autoplay: true
 		});
 
-		$('.view').plaxify({"xRange":100,"yRange":50,"invert":true})
-		$.plax.enable();
-		
 	</script>
 
 	<script src="js/script.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
 
 
 	<script>
@@ -445,7 +444,8 @@
 		});
 
 
-		
+		const scene = document.getElementById('separateImage');
+		const parallaxInstance = new Parallax(scene);
 		
 
 		

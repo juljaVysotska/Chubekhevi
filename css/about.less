@@ -51,7 +51,11 @@ nav.white .burger-menu div {
         }
 
         .text-wrapp {
-            width: 50%;
+            width: 55%;
+
+            @media (max-height: 700px){
+                padding-top: 80px;
+            }
 
             h1 {
                 .font-regular-Oxygen;
@@ -66,10 +70,7 @@ nav.white .burger-menu div {
                 height: 88px;
                 flex-direction: column-reverse;
 
-                @media (max-width: 1360px) {
-                    line-height: 96px;
-                    font-size: 72px;
-                }
+                
             }
 
             p {
