@@ -30,7 +30,7 @@ nav.white {
         position: absolute;
         bottom: -125px;
         right: -95px;
-        top: unset;    
+        top: unset;
         width: calc(100% / 2.1);
     }
 }
@@ -72,12 +72,13 @@ article {
     h1 {
         // font-size: 72px;
         // line-height: 96px;
-         font-size: 4.2vw;
+        font-size: 4.2vw;
         line-height: 5.6vw;
         .font-regular-Oxygen();
         margin-bottom: 80px;
         color: #333;
-        @media (max-width: 1200px){
+
+        @media (max-width: 1200px) {
             line-height: 96px;
             font-size: 72px;
         }
@@ -85,13 +86,14 @@ article {
 
     h2 {
         // font-size: 32px;
-        font-size: 1.8vw;  
+        font-size: 1.8vw;
         line-height: 3.2vw;
         .font-regular-Oxygen();
         margin-bottom: 55px;
         color: #333;
         margin-top: 55px;
-        @media (max-width: 1200px){
+
+        @media (max-width: 1200px) {
             font-size: 32px;
         }
     }
@@ -103,9 +105,10 @@ article {
         padding-top: 56.5%;
         overflow: hidden;
         position: relative;
-        img{
+
+        img {
             position: absolute;
-            top:0;
+            top: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -138,9 +141,9 @@ article {
 .blog {
     margin-top: 250px;
 
-    h2{
+    h2 {
         margin-bottom: 35px;
-        
+
     }
 
     .blog-article {
@@ -151,16 +154,17 @@ article {
         margin-right: 40px;
         float: left;
 
-        a{
+        a {
             display: block;
             margin-bottom: 80px;
 
-            &:hover{
-                .img-cover img{
-                    transform: scale3d(1.05,1.05,1.05);
+            &:hover {
+                .img-cover img {
+                    transform: scale3d(1.05, 1.05, 1.05);
                 }
             }
         }
+
         &:last-child {
             margin-right: 0;
         }
@@ -219,7 +223,7 @@ article {
 
 /*-*/
 
-@media screen and (min-width: 760px) and (max-width: 1200px){
+@media screen and (min-width: 760px) and (max-width: 1200px) {
     .rotator {
 
         .decoration {
@@ -227,13 +231,15 @@ article {
         }
     }
 
-    main{
+    main {
         padding-top: 180px;
     }
-    .date{
-         margin-right: 40px;
+
+    .date {
+        margin-right: 40px;
         margin-left: 40px;
     }
+
     article {
         .text-container {
             width: calc(100% - 80px);
@@ -247,72 +253,76 @@ article {
         }
 
         h2 {
-            
+
             // font-size: 20px;
             // line-height: 36px;
             margin-bottom: 32px;
         }
 
 
-        p {            
+        p {
             // font-size: 16px;
             // line-height: 32px;
             margin-bottom: 26px;
         }
 
-        figure{
+        figure {
             margin-bottom: 60px
         }
 
     }
 
     .blog {
-        padding-left: 40px; 
+        padding-left: 40px;
         padding-right: 40px;
 
-        .blog-article{
+        .blog-article {
             max-width: calc(100% / 2 - 10px);
             margin-right: 20px;
             margin-bottom: 40px;
 
-            &:nth-child(2n){
+            &:nth-child(2n) {
                 margin-right: 0
             }
 
-            &:nth-child(3n){
+            &:nth-child(3n) {
                 margin-right: 20px
             }
 
-            .date{
+            .date {
                 margin-left: 0;
             }
         }
     }
-    
+
 }
 
-@media screen and (max-width: 760px){
-    main{
+@media screen and (max-width: 760px) {
+    main {
         padding-top: 0;
     }
-    .rotator {
-         margin-bottom: 50px;
-        .decoration {
-            width: calc(100% );
 
-    bottom: -31px;
+    .rotator {
+        margin-bottom: 50px;
+
+        .decoration {
+            width: calc(100%);
+
+            bottom: -31px;
         }
     }
-    .date{
+
+    .date {
         margin-right: 20px;
         margin-left: 20px;
     }
 
-     article {
+    article {
 
-        &:first-of-type{
+        &:first-of-type {
             margin-top: 120px;
         }
+
         .text-container {
             width: calc(100% - 40px);
             margin: 0 auto;
@@ -327,51 +337,51 @@ article {
         }
 
         h2 {
-            
+
             font-size: 20px;
             line-height: 36px;
             margin-bottom: 32px;
         }
 
 
-        p {            
+        p {
             font-size: 16px;
             line-height: 32px;
             margin-bottom: 26px;
         }
 
-        figure{
+        figure {
             margin-bottom: 50px
         }
 
     }
 
     .blog {
-        padding-left: 20px; 
+        padding-left: 20px;
         padding-right: 20px;
         margin-top: 100px;
 
-        .blog-article{
+        .blog-article {
             max-width: 100%;
             margin-right: 0px;
             margin-bottom: 40px;
             float: unset;
 
-            &:nth-child(2n){
+            &:nth-child(2n) {
                 margin-right: 0
             }
 
-            &:nth-child(3n){
+            &:nth-child(3n) {
                 margin-right: 0
             }
 
-            .date{
+            .date {
                 margin-left: 0;
             }
         }
     }
 
-    .photo{
+    .photo {
         max-height: 450px;
     }
 }

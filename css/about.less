@@ -53,7 +53,7 @@ nav.white .burger-menu div {
         .text-wrapp {
             width: 55%;
 
-            @media (max-height: 700px){
+            @media (max-height: 700px) {
                 padding-top: 80px;
             }
 
@@ -70,7 +70,7 @@ nav.white .burger-menu div {
                 height: 88px;
                 flex-direction: column-reverse;
 
-                
+
             }
 
             p {
@@ -136,6 +136,10 @@ nav.transparent .nav-list .logo img {
 
 .block {
     margin-bottom: 150px;
+
+    &.about-block {
+        margin-bottom: 0;
+    }
 
     .side {
         width: 50%;
@@ -244,12 +248,12 @@ main {
     margin-bottom: 175px;
     position: relative;
     top: 0;
-    margin-top: 125px;
+    margin-top: 0;
     // height: 200vh;
 
     .slick-arrow.slick-next.slick-disabled,
-    .slick-arrow.slick-prev.slick-disabled{
-        background: rgba(196,196,196,.7);
+    .slick-arrow.slick-prev.slick-disabled {
+        background: rgba(196, 196, 196, .7);
         transition: .3s all ease-in-out;
         // opacity: 30%;
     }
@@ -261,7 +265,7 @@ main {
         background: white;
         position: absolute;
         left: calc(629px + 8.3% - 30px);
-        top:350px;
+        top: 350px;
         flex-direction: column-reverse;
         overflow: hidden;
         cursor: pointer;
@@ -270,10 +274,11 @@ main {
         align-items: center;
         justify-content: center;
         padding: 10px 10px 10px 15px;
-        box-shadow: 0 20px 30px rgba(0,0,0,.15);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, .15);
         transition: .3s all ease-in-out;
-        
-        &:focus, &:active{
+
+        &:focus,
+        &:active {
             outline: none;
         }
 
@@ -285,7 +290,6 @@ main {
             background-size: contain;
             width: 45px;
             pointer-events: none
-
         }
     }
 
@@ -296,8 +300,8 @@ main {
         background: white;
         position: absolute;
         left: calc(629px + 8.3% - 30px);
-        
-        top:435px;
+
+        top: 435px;
         flex-direction: column-reverse;
         overflow: hidden;
         cursor: pointer;
@@ -306,10 +310,11 @@ main {
         align-items: center;
         justify-content: center;
         padding: 10px 15px 10px 10px;
-        box-shadow: 0 20px 30px rgba(0,0,0,.15);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, .15);
         transition: .3s all ease-in-out;
-        
-        &:focus, &:active{
+
+        &:focus,
+        &:active {
             outline: none;
         }
 
@@ -321,7 +326,6 @@ main {
             background-size: contain;
             width: 45px;
             pointer-events: none
-
         }
 
 
@@ -347,7 +351,7 @@ main {
             left: 0;
             right: 0;
             .font-light-Oxygen();
-            
+
             font-size: 2.5vw;
             line-height: 4vw;
 
@@ -452,6 +456,10 @@ main {
     }
 
     .block {
+        &.about-block {
+            margin-bottom: 0;
+        }
+
         .vertical {
             display: none;
         }
@@ -489,12 +497,12 @@ main {
                 max-width: unset;
             }
 
-            h2{                
+            h2 {
                 font-size: 32px;
                 line-height: 56px;
             }
 
-            p{                
+            p {
                 font-size: 16px;
                 line-height: 32px;
             }
@@ -502,19 +510,21 @@ main {
     }
 
     .map-wrapp {
+        margin-top: 0;
+
         .slick-arrow {
             opacity: 1;
         }
 
 
 
-       
+
         .map-overlay {
             .back {
                 opacity: 0;
             }
 
-            h2{
+            h2 {
 
                 font-size: 48px;
                 line-height: 72px;
@@ -538,33 +548,36 @@ main {
                 line-height: 32px;
             }
         }
-        
-        .slick-arrow.slick-next,        
-        .slick-arrow.slick-prev{
+
+        .slick-arrow.slick-next,
+        .slick-arrow.slick-prev {
             bottom: 12%;
             top: unset;
         }
-        .slick-arrow.slick-next{
+
+        .slick-arrow.slick-next {
             right: 40px;
             left: unset;
-        }       
-        .slick-arrow.slick-prev{
+        }
+
+        .slick-arrow.slick-prev {
             left: unset;
-            left:40px;
+            left: 40px;
 
         }
 
-        .text-block{
+        .text-block {
             padding-left: 40px;
             padding-right: 40px;
         }
 
 
-        .map{
+        .map {
             width: 100%;
             height: 100vh;
 
-            .back,.front{
+            .back,
+            .front {
                 height: 100vh;
                 width: auto;
                 position: absolute;
@@ -581,7 +594,7 @@ main {
         .headline {
             .text-wrapp {
 
-                h1 {                  
+                h1 {
                     font-size: 72px;
                     line-height: 96px;
                     margin-bottom: 24px;
@@ -618,7 +631,7 @@ main {
             }
 
             .text-wrapp {
-                    padding-top: 0;
+                padding-top: 0;
                 width: 100%;
 
                 h1 {
@@ -655,6 +668,11 @@ main {
         display: grid;
         margin-bottom: 100px;
 
+        &.about-block {
+            margin-bottom: 0;
+        }
+
+
         .horisontal {
             display: none;
         }
@@ -683,6 +701,7 @@ main {
             margin-right: 20px;
             margin-top: 0;
             padding-left: 0;
+            margin-bottom: 50px;
 
             h2 {
                 font-size: 20px;
@@ -695,7 +714,7 @@ main {
 
                 font-size: 14px;
                 line-height: 28px;
-                margin-bottom: 50px;
+                margin-bottom: 0;
                 max-width: 100%
             }
         }
@@ -712,19 +731,21 @@ main {
 
     .map-wrapp {
         margin-bottom: 80px;
-        margin-top: 100px;
+        margin-top: 0;
         height: unset;
-    
+
         .slick-arrow.slick-next.slick-disabled,
-        .slick-arrow.slick-prev.slick-disabled{
+        .slick-arrow.slick-prev.slick-disabled {
             opacity: 30%;
             background: transparent;
         }
-        .map{
+
+        .map {
             height: unset;
         }
 
-        .map .back,.map .front{
+        .map .back,
+        .map .front {
             width: 200%;
             height: auto;
             margin-left: -100%;
@@ -741,7 +762,7 @@ main {
             bottom: 50px;
             width: 50px;
             box-shadow: unset;
-            
+
         }
 
         .slick-arrow.slick-next {
@@ -753,8 +774,8 @@ main {
             width: 50px;
             box-shadow: unset;
 
-           
-            
+
+
         }
 
         .map-overlay {

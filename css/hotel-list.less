@@ -3,21 +3,22 @@
 
 main {
     position: relative;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
-nav .burger-menu div{
+nav .burger-menu div {
     background-color: white
 }
 
-nav.white .burger-menu div{
+nav.white .burger-menu div {
     background-color: black
 }
 
-nav.transparent .nav-list .logo img{
-	display: block;
+nav.transparent .nav-list .logo img {
+    display: block;
 }
-.head-picture{
+
+.head-picture {
     height: 435px;
 }
 
@@ -26,8 +27,8 @@ nav.transparent .nav-list .logo img{
 
     .side {
         width: 50%;
-		float: left;
-		position: relative;
+        float: left;
+        position: relative;
 
         &:last-child {
             float: unset;
@@ -43,32 +44,32 @@ nav.transparent .nav-list .logo img{
             margin-left: 16.6%;
             //height: calc((100vw ) *1.5);
 
-		}
-		
-		.decoration{
-			position: absolute;
-			bottom: -30px;
-			right: 110px;
+        }
 
-		}
+        .decoration {
+            position: absolute;
+            bottom: -30px;
+            right: 110px;
+
+        }
     }
 
     .image {
         background: transparent url(../img/views/image3.jpg) center center no-repeat;
         background-size: cover;
         background-attachment: fixed;
-	}
-	
-	// &.image-text .with-text {
-	// 	.text-wrapp {
-	// 		padding-left: 0;
-	// 		margin-top: 170px;
-	// 	}
-	// }
+    }
+
+    // &.image-text .with-text {
+    //  .text-wrapp {
+    //      padding-left: 0;
+    //      margin-top: 170px;
+    //  }
+    // }
 
     .with-text {
         .text-wrapp {
-           padding-left: 16.6%;
+            padding-left: 16.6%;
             margin-bottom: 167px;
 
             h2,
@@ -83,7 +84,7 @@ nav.transparent .nav-list .logo img{
                 text-align: left;
                 // font-size: 32px;
                 // line-height: 56px;
-                font-size: 1.8vw;  
+                font-size: 1.8vw;
                 line-height: 3.2vw;
                 color: #333;
             }
@@ -100,40 +101,43 @@ nav.transparent .nav-list .logo img{
 }
 
 
-.hotel-search{
+.hotel-search {
     margin: 0 8.3%;
 
-    h2{
+    h2 {
         .font-light-Oxygen();
         font-size: 32px;
-        line-height:66px;
+        line-height: 66px;
         color: #333;
         margin-bottom: 25px;
     }
 
-    button{
+    button {
         -webkit-appearance: none !important;
         background: transparent;
         cursor: pointer;
     }
 
-    form{
+    form {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 85px;
     }
-       
-    .room,.capacity{
-        width: calc(100% / 10 * 2 );
-    }
-    .location{
-        width: calc(100% - (100% / 10 * 2) * 2  - 250px - 40px * 3 );
+
+    .room,
+    .capacity {
+        width: calc(100% / 10 * 2);
     }
 
-    .input-wrapp{
-        float: left;        
-        label{
+    .location {
+        width: calc(100% - (100% / 10 * 2) * 2 - 250px - 40px * 3);
+    }
+
+    .input-wrapp {
+        float: left;
+
+        label {
             display: block;
             width: 100%;
             .font-light-Oxygen();
@@ -142,10 +146,10 @@ nav.transparent .nav-list .logo img{
             color: #828282;
         }
 
-        .select-wrapp{
+        .select-wrapp {
             position: relative;
 
-            &:after{
+            &:after {
                 content: url(../img/icon/arr-bottom.svg);
 
                 display: flex;
@@ -161,7 +165,7 @@ nav.transparent .nav-list .logo img{
             }
         }
 
-        select{
+        select {
             height: 47px;
             border-bottom: 1px solid #E0E0E0;
             width: 100%;
@@ -175,15 +179,15 @@ nav.transparent .nav-list .logo img{
             appearance: none;
             background-color: white;
 
-            
 
-            option{
+
+            option {
                 height: 50px !important;
-               // background: red  !important;
-                padding: 5px  !important;
-                font-size: 18px  !important;
-                line-height: 41px  !important;
-                .font-regular-Oxygen()  !important;
+                // background: red  !important;
+                padding: 5px !important;
+                font-size: 18px !important;
+                line-height: 41px !important;
+                .font-regular-Oxygen() !important;
                 border: unset !important;
                 min-height: 50px !important;
             }
@@ -191,12 +195,12 @@ nav.transparent .nav-list .logo img{
     }
 }
 
-.filter-collapse{
+.filter-collapse {
     display: none;
 }
 
-.hotel-list{
-    .card{
+.hotel-list {
+    .card {
         width: calc(100% / 3 - 27px);
         margin-right: 40px;
         float: left;
@@ -204,15 +208,16 @@ nav.transparent .nav-list .logo img{
         border-bottom: 1px solid #E0E0E0;
         margin-bottom: 75px;
 
-        &:nth-child(3n){
+        &:nth-child(3n) {
             margin-right: 0;
         }
-        .img-cover{
+
+        .img-cover {
             position: relative;
             padding-top: 80%;
             margin-bottom: 20px;
 
-            img{
+            img {
                 position: absolute;
                 top: 0;
                 overflow: hidden;
@@ -222,12 +227,12 @@ nav.transparent .nav-list .logo img{
             }
         }
 
-        .text-wrapp{
+        .text-wrapp {
             display: inline;
             align-items: center;
         }
 
-        .place{
+        .place {
             display: flex;
             align-items: center;
             .font-light-Oxygen();
@@ -236,31 +241,31 @@ nav.transparent .nav-list .logo img{
             color: #828282;
             margin-bottom: 0;
             display: inline;
-            
-            &:before{
+
+            &:before {
                 content: url(../img/icon/marker-gray.svg);
                 margin-right: 10px;
             }
         }
 
-        .valley{
+        .valley {
             border-left: 1px solid #c4c4c4;
             .font-light-Oxygen();
             font-size: 12px;
             line-height: 18px;
             color: #828282;
             margin-bottom: 0;
-            margin-left: 8px ;
+            margin-left: 8px;
             padding-left: 8px;
             display: inline;
         }
 
-        .name{			
+        .name {
             font-size: 20px;
             line-height: 36px;
             .font-regular-Oxygen();
             margin-bottom: 0;
-            transition: .3s all ease-in-out; 
+            transition: .3s all ease-in-out;
             color: #333333;
             height: 72px;
             overflow: hidden;
@@ -271,40 +276,41 @@ nav.transparent .nav-list .logo img{
             text-overflow: ellipsis;
             margin-top: 3px;
 
-            &:hover{
+            &:hover {
                 color: lighten(#333333, 20%);
-                transition: .3s all ease-in-out; 
+                transition: .3s all ease-in-out;
             }
         }
-        
 
-        .more{
+
+        .more {
             display: flex;
             margin-top: 15px;
 
-            .info{
+            .info {
                 width: 60%;
-                .item{
+
+                .item {
                     display: flex;
 
                     float: left;
                     margin-right: 40px;
 
-                    &:last-child{
+                    &:last-child {
                         margin-right: 0;
                     }
 
-                    
 
-                    p{                            
-                        
+
+                    p {
+
                         margin-bottom: 0;
                         font-size: 14px;
                         line-height: 28px;
                         .font-regular-Oxygen();
                         color: #828282;
 
-                        span{                                
+                        span {
                             font-size: 14px;
                             line-height: 30px;
                             color: #828282;
@@ -313,7 +319,8 @@ nav.transparent .nav-list .logo img{
                             margin-left: 5px;
                         }
                     }
-                    svg{
+
+                    svg {
                         height: 25px;
                         width: 19px;
                         margin-right: 10px;
@@ -321,8 +328,8 @@ nav.transparent .nav-list .logo img{
                 }
             }
 
-            
-            .cost{
+
+            .cost {
                 width: 40%;
                 margin-left: auto;
 
@@ -330,7 +337,7 @@ nav.transparent .nav-list .logo img{
                 align-items: flex-end;
                 justify-content: flex-end;
 
-                p{
+                p {
                     .font-light-Oxygen();
                     font-size: 14px;
                     line-height: 28px;
@@ -338,7 +345,7 @@ nav.transparent .nav-list .logo img{
                     display: inline;
                 }
 
-                .price{
+                .price {
                     .font-regular-Oxygen();
                     font-size: 18px;
                     line-height: 28px;
@@ -348,38 +355,40 @@ nav.transparent .nav-list .logo img{
             }
         }
     }
-    
+
 }
 
-.load-more{
+.load-more {
     margin-bottom: 175px;
 }
-.load-more a{
+
+.load-more a {
     margin: 0 auto;
     margin-top: 80px;
 }
 
-.image-separator{
+.image-separator {
     position: relative;
-    margin-bottom: 175px;;
+    margin-bottom: 175px;
+    ;
 
-    .decoration{
+    .decoration {
         position: absolute;
         left: 100px;
         bottom: -105px;
-        
+
     }
-    
-    .img-wrapp{
+
+    .img-wrapp {
         width: 100%;
-            // height: 630px;
+        // height: 630px;
         position: relative;
         overflow: hidden;
 
         padding-top: 50%;
 
-        img{
-        
+        img {
+
             position: absolute;
             top: -50px !important;
             left: -80px !important;
@@ -389,17 +398,17 @@ nav.transparent .nav-list .logo img{
         }
     }
 
-   
+
 }
 
 
-.block{
-    .with-text{
+.block {
+    .with-text {
         margin-top: 100px;
     }
 
-    .side{
-        .decoration{
+    .side {
+        .decoration {
             bottom: -120px;
             left: 35%;
         }
@@ -410,23 +419,24 @@ nav.transparent .nav-list .logo img{
 
 /*-*/
 
-@media screen and (min-width: 760px) and (max-width: 1200px){
+@media screen and (min-width: 760px) and (max-width: 1200px) {
 
-    .decoration{
+    .decoration {
         display: none;
     }
-    
-    .section-title{
+
+    .section-title {
         display: block;
         margin-right: 40px;
         margin-left: 40px;
         margin-bottom: 85px;
 
-        h1,p{
+        h1,
+        p {
             width: 100%;
         }
 
-        h1{
+        h1 {
             margin-bottom: 34px;
             padding-right: 0;
 
@@ -434,26 +444,27 @@ nav.transparent .nav-list .logo img{
             line-height: 96px;
         }
 
-        p{            
+        p {
             font-size: 19px;
             line-height: 36px;
         }
     }
 
-    .hotel-search{
+    .hotel-search {
         margin-left: 40px;
         margin-right: 40px;
-        
-        h2{
+
+        h2 {
             margin-bottom: 45px;
         }
 
-        form{
+        form {
             display: block;
 
         }
 
-        .capacity, .room{
+        .capacity,
+        .room {
             width: calc(100% / 2 - 20px);
             margin-right: 40px;
             float: left;
@@ -462,16 +473,16 @@ nav.transparent .nav-list .logo img{
 
         }
 
-        .capacity{
+        .capacity {
             margin-right: 0
         }
 
-        .location{
+        .location {
             width: calc(100% - 240px - 40px);
             margin-right: 40px;
         }
 
-        button{
+        button {
             float: right;
             margin-top: 12px;
             height: 48px;
@@ -479,31 +490,32 @@ nav.transparent .nav-list .logo img{
         }
     }
 
-    .hotel-list{
+    .hotel-list {
         margin-top: 50px;
 
-        .card{
+        .card {
             width: calc(100% /2 - 20px);
             margin-right: 40px;
 
-            &:nth-child(3n){
+            &:nth-child(3n) {
                 margin-right: 40px
             }
 
-            &:nth-child(2n), &:last-child{
+            &:nth-child(2n),
+            &:last-child {
                 margin-right: 0
             }
 
-            .more{
-                .info{
-                    .item{
+            .more {
+                .info {
+                    .item {
                         margin-right: 30px;
 
-                        svg{
+                        svg {
                             margin-right: 5px;
                         }
 
-                        span{
+                        span {
                             display: none;
                         }
 
@@ -512,99 +524,104 @@ nav.transparent .nav-list .logo img{
 
             }
 
-            
+
         }
     }
 
-    .block{
+    .block {
         .vertical {
             display: none;
         }
 
-        .side{
+        .side {
             width: 100%;
             float: unset;
 
-            .text-wrapp{
+            .text-wrapp {
                 order: 2;
             }
-            img{
+
+            img {
                 order: 1;
             }
         }
 
-        &.image-text{
-            .with-text{
-                .text-wrapp{
+        &.image-text {
+            .with-text {
+                .text-wrapp {
                     margin-top: 80px;
                     margin-bottom: 0;
                 }
             }
         }
 
-        .with-text .text-wrapp{
+        .with-text .text-wrapp {
             margin-left: 40px;
             margin-right: 40px;
             padding-left: 0;
             margin-bottom: 100px;
 
-            h2, p{
-               max-width: unset;
+            h2,
+            p {
+                max-width: unset;
             }
         }
     }
 }
 
 
-@media screen and (max-width: 768px){
-     .decoration, .image-separator{
+@media screen and (max-width: 768px) {
+
+    .decoration,
+    .image-separator {
         display: none;
     }
 
-    .head-picture{
+    .head-picture {
         height: 230px;
     }
-    
 
 
-    .section-title{
+
+    .section-title {
         display: block;
         margin-right: 20px;
         margin-left: 20px;
         margin-top: 47px;
         margin-bottom: 100px;
 
-        h1,p{
+        h1,
+        p {
             width: 100%;
         }
 
-        h1{
+        h1 {
             margin-bottom: 34px;
             padding-right: 0;
 
-                        
+
             font-size: 42px;
             line-height: 48px;
         }
 
-        p{ 
+        p {
             font-size: 16px;
             line-height: 32px;
         }
     }
 
-    .hotel-search{
+    .hotel-search {
         margin-right: 20px;
         margin-left: 20px;
 
-        h2{
+        h2 {
 
             font-size: 24px;
             line-height: 40px;
             margin-bottom: 15px;
         }
 
-        .filter-collapse{
+        .filter-collapse {
             display: inline-block;
             cursor: pointer;
             color: #FE6A49;
@@ -616,67 +633,72 @@ nav.transparent .nav-list .logo img{
             margin-bottom: 40px;
         }
 
-        form{
+        form {
             display: block;
 
-            &.collapsed{
+            &.collapsed {
                 height: 0;
                 overflow: hidden;
                 transition: .3s all ease-in-out;
             }
         }
 
-        .input-wrapp{
+        .input-wrapp {
             width: 100%;
             float: unset;
             margin-bottom: 28px;
         }
 
-        button{
+        button {
             margin-left: auto;
             margin-right: auto;
             width: 229px;
             height: 47px;
-            margin-top: 40px
+            margin-top: 40px;
+
+            font-size: 18px;
+            line-height: 41px;
         }
     }
 
-    .hotel-list{
-        .card{
+    .hotel-list {
+        .card {
             width: 100%;
             float: unset;
             margin-right: 0;
             margin-bottom: 40px;
             padding-bottom: 15px;
 
-            .name{
+            .name {
                 max-height: 72px;
                 height: unset;
             }
 
-            .more{
+            .more {
                 display: block;
                 margin-top: 15px;
 
-                .info{
+                .info {
                     width: 100%;
-                    .item{
+
+                    .item {
                         margin-right: 15px;
 
-                        &:last-child{
+                        &:last-child {
                             float: unset;
                         }
-                        svg{
+
+                        svg {
                             display: none;
                         }
                     }
                 }
 
-                .cost{
+                .cost {
                     margin-left: unset;
                     justify-content: flex-start;
 
-                    .price{
+                    .price {
                         font-size: 14px;
                     }
                 }
@@ -684,7 +706,7 @@ nav.transparent .nav-list .logo img{
         }
     }
 
-     .block {
+    .block {
         margin-bottom: 0;
         display: inline-grid;
 
@@ -692,42 +714,41 @@ nav.transparent .nav-list .logo img{
             display: none;
         }
 
-        .side{
+        .side {
             width: 100%;
             float: unset;
             order: 1;
 
-            &.with-text{
+            &.with-text {
                 order: 2;
                 margin-top: 70px;
             }
 
-           
 
-            .vertical{
-                    width: 100%;
-                    height: 100%;
-                    margin-left: 0
-                
+
+            .vertical {
+                width: 100%;
+                height: 100%;
+                margin-left: 0
             }
         }
 
-        
 
-        .with-text .text-wrapp{
+
+        .with-text .text-wrapp {
             margin-left: 20px;
             margin-right: 20px;
             padding-left: 0;
             // margin-top: 35px;
             margin-bottom: 50px;
 
-            h2{
+            h2 {
                 font-size: 20px;
                 line-height: 36px;
                 margin-bottom: 32px;
             }
 
-            p{
+            p {
 
                 font-size: 14px;
                 line-height: 28px;
@@ -735,7 +756,7 @@ nav.transparent .nav-list .logo img{
             }
         }
 
-        &.image-text .with-text .text-wrapp{
+        &.image-text .with-text .text-wrapp {
             margin-top: 35px;
             margin-bottom: 60px;
             margin-top: 0
@@ -745,17 +766,17 @@ nav.transparent .nav-list .logo img{
     .image-separator {
         margin-bottom: 100px;
 
-        .img-wrapp img{
+        .img-wrapp img {
             top: 0 !important;
             left: 0 !important;
         }
     }
-       
 
-    .load-more{
+
+    .load-more {
         margin-bottom: 90px;
 
-        a{
+        a {
             margin-top: 30px;
         }
     }
