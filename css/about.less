@@ -250,7 +250,8 @@ main {
     .slick-arrow.slick-next.slick-disabled,
     .slick-arrow.slick-prev.slick-disabled{
         background: rgba(196,196,196,.7);
-        transition: .3s all ease-in-out
+        transition: .3s all ease-in-out;
+        // opacity: 30%;
     }
 
     .slick-arrow.slick-next {
@@ -346,13 +347,9 @@ main {
             left: 0;
             right: 0;
             .font-light-Oxygen();
-            font-size: 2.3vw;
-            // font-size: 48px;
-            line-height: 72px;
-
-            @media (max-width: 1360px) {
-                font-size: 32px;
-            }
+            
+            font-size: 2.5vw;
+            line-height: 4vw;
 
             color: #333333;
             max-width: 1200px;
@@ -505,18 +502,24 @@ main {
     }
 
     .map-wrapp {
-
-        .map-picture{
-                box-shadow: 0 20px 30px rgba(0,0,0,.15);
-        }
         .slick-arrow {
             opacity: 1;
         }
+
+
 
        
         .map-overlay {
             .back {
                 opacity: 0;
+            }
+
+            h2{
+
+                font-size: 48px;
+                line-height: 72px;
+                padding-right: 40px;
+                padding-left: 40px;
             }
         }
 
@@ -602,8 +605,11 @@ main {
     .first-view {
         padding-left: 20px;
         padding-right: 20px;
-        height: 120vh;
+        height: unset;
         margin-top: 0;
+        height: unset;
+        padding-top: 145px;
+        padding-bottom: 85px;
 
 
         .headline {
@@ -612,12 +618,15 @@ main {
             }
 
             .text-wrapp {
+                    padding-top: 0;
                 width: 100%;
 
                 h1 {
                     font-size: 42px;
                     line-height: 48px;
+                    flex-direction: unset;
                     margin-bottom: 24px;
+                    height: unset;
                 }
 
                 p {
@@ -705,7 +714,12 @@ main {
         margin-bottom: 80px;
         margin-top: 100px;
         height: unset;
-
+    
+        .slick-arrow.slick-next.slick-disabled,
+        .slick-arrow.slick-prev.slick-disabled{
+            opacity: 30%;
+            background: transparent;
+        }
         .map{
             height: unset;
         }
@@ -746,11 +760,14 @@ main {
         .map-overlay {
             pointer-events: all;
             overflow: hidden;
+            height: 300px;
 
             h2 {
-                top: 30px;
-                margin-left: 10px;
-                margin-right: 10px;
+
+                font-size: 24px;
+                line-height: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .back {
@@ -763,10 +780,6 @@ main {
             }
         }
 
-        .map-picture {
-                box-shadow: 0 20px 30px rgba(0,0,0,.15);
-        
-        }
 
         .text-block {
             position: unset;
