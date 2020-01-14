@@ -473,6 +473,10 @@ nav.white .nav-list .logo{
 
 @media screen and (min-width: 760px) and (max-width: 1200px) {
 
+    .image-separator{
+        margin-bottom: 80px;
+    }
+
     .decoration {
         display: none;
     }
@@ -520,7 +524,8 @@ nav.white .nav-list .logo{
         .headline {
             .logo.big {
                 float: unset;
-                margin-bottom: 0;
+                margin-bottom: 0;    
+                margin-left: -20px;
             }
 
             .text-wrapp {
@@ -539,11 +544,12 @@ nav.white .nav-list .logo{
         padding-top: 100px;
         padding-left: 40px;
         padding-right: 40px;
-        margin-bottom: 75px;
-        padding-bottom: 120px;
+        margin-bottom: 100px;
+        padding-bottom: 0;
 
         .title {
-            text-align: left
+            text-align: left;
+            margin-bottom: 80px;
         }
 
         .block-with-image {
@@ -579,7 +585,7 @@ nav.white .nav-list .logo{
                 margin-left: 0;
                 width: 100%;
                     position: absolute;
-                    bottom: 43px;
+                    bottom: 93px;
                     display: flex;
 
                 .video {
@@ -716,7 +722,9 @@ nav.white .nav-list .logo{
 }
 
 @media screen and (max-width: 760px) {
-    
+    nav.transparent .nav-list .logo img{
+        display: block;
+    }
     nav{
         position: fixed;
     }
@@ -727,8 +735,13 @@ nav.white .nav-list .logo{
     .first-view {
         padding-left: 20px;
         padding-right: 20px;
-        height: 530px;
+        height: 110vh;
+        min-height: 770px;
         margin-top: 0;
+
+        @media (max-height: 600px){
+            height: 130vh;
+        }
 
 
         .headline {
@@ -761,8 +774,8 @@ nav.white .nav-list .logo{
         padding-top: 75px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 92px;
-        padding-bottom: 120px;
+        margin-bottom: 100px;
+        padding-bottom: 0;
 
         .title {
             text-align: left;
@@ -798,7 +811,7 @@ nav.white .nav-list .logo{
                 margin-left: 0;
                 width: 100%;
                     position: absolute;
-                    bottom: 43px;
+                    bottom: 93px;
                     display: flex;
 
                 .video {
@@ -828,6 +841,7 @@ nav.white .nav-list .logo{
             p {
                 font-size: 14px;
                 line-height: 28px;
+                margin-bottom: 50px;
             }
         }
     }
@@ -932,7 +946,6 @@ nav.white .nav-list .logo{
 
     .block {
         display: grid;
-        margin-bottom: 100px;
 
         .horisontal {
             display: none;

@@ -34,7 +34,12 @@
       
 		font-size: 33px;
 		line-height: 40px;
-		.font-medium-BPG()
+		.font-medium-BPG();
+        max-height: 120px;
+        height: unset;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
     }
 
     .date {        
@@ -90,6 +95,7 @@
 
         h3 {          
             font-size: 28px;
+            max-height: 109px;
             line-height: 36px;
         }
 

@@ -245,7 +245,7 @@ main {
     position: relative;
     top: 0;
     margin-top: 125px;
-    height: 200vh;
+    // height: 200vh;
 
     .slick-arrow.slick-next.slick-disabled,
     .slick-arrow.slick-prev.slick-disabled{
@@ -296,7 +296,7 @@ main {
         position: absolute;
         left: calc(629px + 8.3% - 30px);
         
-        top:460px;
+        top:435px;
         flex-direction: column-reverse;
         overflow: hidden;
         cursor: pointer;
@@ -330,13 +330,17 @@ main {
         // background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 
         width: 100%;
-        position: absolute;
+        // position: absolute;
+        height: 500px;
         top: 0;
         z-index: 999;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         h2 {
-            position: absolute;
+            // position: absolute;
             top: 245px;
             z-index: 3;
             left: 0;
@@ -382,7 +386,7 @@ main {
 
         width: 100%;
         height: auto;
-        position: sticky;
+        // position: sticky;
         top: 0;
     }
 
@@ -398,9 +402,9 @@ main {
 
         .back,
         .front {
-            width: auto;
-        height: 100vh;
-            // height: auto;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
         }
 
         .front {
@@ -501,6 +505,10 @@ main {
     }
 
     .map-wrapp {
+
+        .map-picture{
+                box-shadow: 0 20px 30px rgba(0,0,0,.15);
+        }
         .slick-arrow {
             opacity: 1;
         }
@@ -534,13 +542,18 @@ main {
             top: unset;
         }
         .slick-arrow.slick-next{
-            right: 60px;
+            right: 40px;
             left: unset;
         }       
         .slick-arrow.slick-prev{
             left: unset;
-            left:60px;
+            left:40px;
 
+        }
+
+        .text-block{
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
 
@@ -691,6 +704,11 @@ main {
     .map-wrapp {
         margin-bottom: 80px;
         margin-top: 100px;
+        height: unset;
+
+        .map{
+            height: unset;
+        }
 
         .map .back,.map .front{
             width: 200%;
@@ -708,6 +726,7 @@ main {
             top: unset;
             bottom: 50px;
             width: 50px;
+            box-shadow: unset;
             
         }
 
@@ -718,6 +737,7 @@ main {
             top: unset;
             bottom: 50px;
             width: 50px;
+            box-shadow: unset;
 
            
             
@@ -744,7 +764,8 @@ main {
         }
 
         .map-picture {
-            top: 50px;
+                box-shadow: 0 20px 30px rgba(0,0,0,.15);
+        
         }
 
         .text-block {

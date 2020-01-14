@@ -139,7 +139,7 @@
 		<div class="map-wrapp	">
 			<div class="map-overlay">
         		<!-- <img class="back" src="img/map/bigmap_bg.jpg" alt=""> -->
-				<img class="front" src="img/map/white-jverlay.png" alt="">
+				<!-- <img class="front" src="img/map/white-jverlay.png" alt=""> -->
         		<h2>Start your journey to the treasure hidden in green-bathed mountains</h2>
         	</div>
 
@@ -375,87 +375,21 @@
 		});
 
 
-
-		// $('.map-wrapp').height($('.map-overlay').height() + 400);
-
-
-
-
-		// $('.map-picture').on('mousewheel ', function (e) {
-
-		// 	    if (e.originalEvent.deltaY>0) {
-		// 	        $('.slick-next').click();
-		// 	        if($('[data-slick-index="2"]').hasClass('slick-current') ){
-		// 				$('.map-picture').css('pointer-events',"none")
-		// 			}
-		// 	    } else {
-		// 	        $('.slick-prev').click();
-					
-		// 			if($('[data-slick-index="0"]').hasClass('slick-current') ){
-		// 				$('.map-picture').css('pointer-events',"none")
-		// 			}
-		// 	    }
-		// 	    e.preventDefault();
-		// 	});
-
-		// $(window).scroll(()=>{
-		// 	if($('.map-picture').offset().top <= $(window).scrollTop()){
-		// 		$('.map-picture').css('pointer-events',"");
-
-
-				
-				
-		// 	}
-
-
-		// });
-
-		// $('.map-wrapp').on('mousewheel', (e)=>{
-		// 	if($(window).width() >= 1200){
-
-		// 		if($('.map-overlay').offset().top <= $(window).scrollTop() + 200){
-		// 			 if (e.originalEvent.deltaY>0) {
-		// 			 	$('.map-overlay').css({
-		// 			 		'opacity': 0,
-		// 			 		'transition': '.3s all ease-in-out',
-		// 			 		'pointer-events': 'none'
-		// 			 	});
-
-		// 			 	$('.map-wrapp .text-block').css({
-		// 			 		'opacity': 1,
-		// 			 		'transition': '.3s all ease-in-out'
-		// 			 	})
-		// 			 }
-		// 			 // 
-		// 		}else{
-		// 			 	$('.map-overlay').css({
-		// 			 		'opacity': 1,
-		// 			 		'transition': '.3s all ease-in-out',
-		// 			 		'pointer-events': ''
-
-		// 			 	})
-		// 			 }
-		// 	}
-		// });
-
-
-		// $('.map-wrapp').on('scroll', () =>{
-		// 	if($(window).width() >= 760 && $(window).width() <=1200){
-		// 		// $('.map-wrapp').height($(window).height());
-
-		// 		if($('.map-overlay').offset().top <= $(window).scrollTop()){
-		// 		 	$('.map-overlay').css({
-		// 		 		'opacity': 0,
-		// 		 		'transition': '.3s all ease-in-out',
-		// 		 		'pointer-events': 'none'
-		// 		 	})
-		// 		 }
-		// 	}
-		// });
-
-
 		
-		
+		$(window).resize(function () {
+			if($(window).width() < 760 ){
+				let height = ($('.map-wrapp .text-block').height() + 60)/2 - 30;
+				$('.slick-arrow.slick-next, .slick-arrow.slick-prev').css('bottom', height);
+
+			}else{
+				$('.slick-arrow.slick-next, .slick-arrow.slick-prev').css('bottom', '');
+
+			}
+		});
+
+		$(document).ready(function () {
+			$(window).resize();
+		})
 
 		
 

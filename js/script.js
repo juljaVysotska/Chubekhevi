@@ -32,4 +32,20 @@ $(window).scroll(()=>{
 		});
 
 	}
+
+
+	if($(window).width() < 760 && $(window).scrollTop() > 500){
+		$('nav').removeClass('first-screen');
+
+		$('nav').addClass('white');
+		$('nav').css('background-color','white');
+		$('nav').removeClass('transparent');
+		$('nav').css({
+			'position':'fixed',
+			'top': 0,
+			'transition':'.3s all ease-in-out'
+		});
+
+	
+	}
 });
