@@ -20,7 +20,10 @@ $('.rotator-wrapp').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                variableWidth: true
+                variableWidth: true,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
             }
         },
 
