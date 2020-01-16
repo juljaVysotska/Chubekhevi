@@ -436,6 +436,29 @@ nav.transparent .nav-list .logo img {
 
         .decoration {
             width: calc(100% / 1.1);
+            top: -50px;
+            bottom: unset;
+        }
+
+         .slick-prev{
+            background: transparent url(../img/icon/arr-left-white.svg) no-repeat;
+            width: 20px;
+            height: 40px;
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            z-index: 999;
+            background-size: contain;
+        }
+        .slick-next{
+            background: transparent url(../img/icon/arr-right-white.svg) no-repeat;
+            width: 20px;
+            height: 40px;
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            z-index: 999;
+            background-size: contain;
         }
     }
 
@@ -477,9 +500,7 @@ nav.transparent .nav-list .logo img {
             // z-index: -1;
         }
 
-        .slick-arrow{
-            background-color: red;
-        }
+        
 
         .slick-prev{
             background: transparent url(../img/icon/arr-left-white.svg) no-repeat;
