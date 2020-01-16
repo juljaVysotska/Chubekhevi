@@ -199,6 +199,7 @@ nav.transparent .nav-list .logo img {
     display: none;
 }
 
+
 .hotel-list {
     .card {
         width: calc(100% / 3 - 27px);
@@ -294,7 +295,8 @@ nav.transparent .nav-list .logo img {
                     display: flex;
 
                     float: left;
-                    margin-right: 40px;
+                    // margin-right: 40px;
+                    margin-right: .312vw;
 
                     &:last-child {
                         margin-right: 0;
@@ -516,7 +518,7 @@ nav.transparent .nav-list .logo img {
                         }
 
                         span {
-                            display: none;
+                            // display: none;
                         }
 
                     }
@@ -568,7 +570,26 @@ nav.transparent .nav-list .logo img {
         }
     }
 }
+@media screen and (min-width: 1200px) and (max-width: 1460px) {
+    .hotel-list {
+        .card {
+            .more {
+                .info {
+                    .item {
+                        margin-right: 35px;
+                        p {
 
+                            span {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 @media screen and (max-width: 760px) {
 
@@ -689,6 +710,10 @@ nav.transparent .nav-list .logo img {
                         }
 
                         svg {
+                            // display: none;
+                        }
+
+                        p span{
                             display: none;
                         }
                     }
@@ -782,3 +807,5 @@ nav.transparent .nav-list .logo img {
     }
 
 }
+
+
