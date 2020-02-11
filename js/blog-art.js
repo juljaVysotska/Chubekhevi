@@ -52,3 +52,52 @@ $(window).scroll(() => {
         });
     }
 });
+
+
+
+ const cards = Array.from(document.querySelectorAll('.blog .blog-article'));
+        let minHeight = 0;
+        let imgHeight = 0;
+
+
+        function height() {
+
+            cards.forEach((el) => {
+                let height = 0;
+
+                if(el.hasChildNodes()){
+                    let childrens = el.children;
+
+                     imgHeight = (el.querySelector('.img-cover').offsetHeight >= imgHeight)? el.querySelector('.img-cover').offsetHeight : imgHeight;
+
+                    for(let i =0; i< childrens.length; i++){
+                        height += childrens[i].offsetHeight + parseFloat(window.getComputedStyle(childrens[i]).getPropertyValue('margin-top')) +parseFloat(window.getComputedStyle(childrens[i]).getPropertyValue('margin-bottom')) ;
+                       
+                    }
+                    minHeight = height;
+            
+                }
+
+                console.log(imgHeight);
+
+            });
+
+
+
+            cards.map((el) => {
+                if(window.innerWidth >= 760){
+                    el.style.height = minHeight  + 'px';
+                    // el.querySelector('.img-cover').style.height = imgHeight + 'px';
+                }else{
+                    // el.querySelector('.img-cover').style.height = '';
+                    el.style.height = '';
+
+                }
+
+            });
+
+        }
+
+        height();
+
+        window.onresize = height;
