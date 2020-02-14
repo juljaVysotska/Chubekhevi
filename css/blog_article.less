@@ -63,6 +63,8 @@ article {
     width: 100%;
     margin: 0 auto;
 
+    
+
 
     .text-container {
         width: 66%;
@@ -133,6 +135,32 @@ article {
         line-height: 36px;
         .font-light-Oxygen();
         margin-bottom: 32px;
+    }
+
+    ul{
+        margin-left: 35px;
+        margin-bottom: 32px;
+        list-style: none;
+
+        li{
+            font-size: 19px;
+            line-height: 36px;
+            .font-light-Oxygen();
+            margin-bottom: 5px;
+            position: relative;
+            
+            &:before{
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #FE6A49 ;
+                position: absolute;
+                left: -20px;
+                top: 16px;
+            }
+        }
     }
 
 }
@@ -401,6 +429,22 @@ article {
             font-size: 20px;
             line-height: 36px;
             margin-bottom: 32px;
+        }
+
+        ul{
+            margin-bottom: 26px;
+            margin-left: 20px;
+            
+            li{
+                font-size: 16px;
+                line-height: 32px;
+                &:before{
+                    height: 5px;
+                    width: 5px;
+                    top: 15px;
+                }
+               
+            }
         }
 
 
