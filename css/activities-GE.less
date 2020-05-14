@@ -2,10 +2,19 @@
 
 .section-title {
     h1 {
-        .font-medium-BPG();
-        font-size: 5.2vw;
-        line-height: 5.9vw;
         letter-spacing: -0.05em;
+        text-transform: uppercase;
+        .font-caps-BPG();
+        font-weight: 600;
+        font-size: 4.0vw;
+        line-height: 5vw;
+
+        @media screen and (max-width: 1900px){
+
+            font-size: 88px;
+            line-height: 100px;
+        }
+        
     }
 
     p {
@@ -115,7 +124,7 @@
 @media screen and (min-width: 760px) and (max-width: 1200px) {
     .section-title {
         h1 {
-            .font-medium-BPG();
+            // .font-medium-BPG();
 
             font-size: 102px;
             line-height: 112px;

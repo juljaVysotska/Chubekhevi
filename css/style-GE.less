@@ -35,6 +35,8 @@ body {
 
     li {
         .font-medium-BPG();
+                .font-caps-BPG();
+
         font-size: 26px;
     }
 
@@ -49,24 +51,45 @@ nav {
                 margin-right: 15px;
 
             }
+
+            a{
+                margin-top: 0;
+            }
         }
 
         li {
-            margin-right: 2vw;
+            margin-right: 1.8vw;
 
             a {
                 .font-regular-BPG();
+                .font-caps-BPG();
                 font-size: 26px;
+                margin-top: 15px
             }
 
 
-            @media screen and (max-width: 1360px) {
+            @media screen and (min-width: 1360px){
                 a {
                     font-size: 24px;
                 }
             }
+
+
+
+            @media screen and (min-width: 1200px) and (max-width: 1361px){
+                a{
+                    font-size: 20px
+                }
+            }
         }
     }
+}
+nav .nav-list .logo{
+    margin-right: 15px;
+}
+
+nav .social-media_links a{
+    margin-right: 50px;
 }
 
 
